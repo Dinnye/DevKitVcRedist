@@ -1,0 +1,137 @@
+http://blogs.msdn.com/b/astebner/archive/2009/01/29/9384143.aspx
+http://support.microsoft.com/kb/2019667
+http://msdn.microsoft.com/en-us/library/vstudio/bb164659%28v=vs.110%29.aspx
+
+// ---------------------------------------------------------------------------------------------------
+Visual C++ 2005
+// ---------------------------------------------------------------------------------------------------
+
+Visual C++ 2005 runtime files												2006/04/10
+Visual C++ 2005 (x86) - {A49F249F-0C91-497F-86DF-B2585E8E76B7}
+Visual C++ 2005 (x64) - {6E8E85E8-CE4B-4FF5-91F7-04999C9FAE6A}
+Visual C++ 2005 (ia64)- {03ED71EA-F531-4927-AABD-1C31BCE8E187}
+
+Visual C++ 2005 SP1 runtime files											2007/08/28		8.0.50727.762
+Visual C++ 2005 SP1 (x86) - {7299052B-02A4-4627-81F2-1818DA5D550D}
+Visual C++ 2005 SP1 (x64) - {071C9B48-7C32-4621-A0AC-3F809523288F}
+Visual C++ 2005 SP1 (ia64)- {0F8FB34E-675E-42ED-850B-29D98C2ECE08}
+
+Visual C++ 2005 SP1 ATL Security Update runtime files						2010/09/20		8.0.50727.4053
+Visual C++ 2005 SP1 ATL (x86) - {837B34E3-7C30-493C-8F6A-2B0F04E2912C}
+Visual C++ 2005 SP1 ATL (x64) - {6CE5BAE9-D3CA-4B99-891A-1DC6C118A5FC}
+Visual C++ 2005 SP1 ATL (ia64) - {85025851-A784-46D8-950D-05CB3CA43A13}
+
+Visual C++ 2005 SP1 MFC Security Update runtime files						2011/06/07		8.0.50727.6195
+Visual C++ 2005 SP1 MFC (x86) - {710F4C1C-CC18-4C49-8CBF-51240C89A1A2}		http://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x86.EXE
+Visual C++ 2005 SP1 MFC (x64) - {AD8A2FA1-06E7-4B0D-927D-6E54B3D31028}		http://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x64.EXE
+Visual C++ 2005 SP1 MFC (a64) - {C2F60BDA-462A-4A72-8E4D-CA431A56E9EA}		http://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_IA64.EXE
+
+
+// ---------------------------------------------------------------------------------------------------
+Visual C++ 2008
+// ---------------------------------------------------------------------------------------------------
+
+Visual C++ 2008 runtime files														2007/11/29		9.0.21022
+Microsoft Visual C++ 2008 (x86)  - {FF66E9F6-83E7-3A3E-AF14-8DE9A809A6A4}
+Microsoft Visual C++ 2008 (x64)  - {350AA351-21FA-3270-8B7A-835434E766AD}
+Microsoft Visual C++ 2008 (IA64) - {2B547B43-DB50-3139-9EBE-37D419E0F5FA}
+
+Visual C++ 2008 SP1 runtime files													2008/09/16		9.0.30729.17
+Microsoft Visual C++ 2008 SP1 (x86)  - {9A25302D-30C0-39D9-BD6F-21E6EC160475}
+Microsoft Visual C++ 2008 SP1 (x64)  - {8220EEFE-38CD-377E-8595-13398D740ACE}
+Microsoft Visual C++ 2008 SP1 (IA64) - {5827ECE1-AEB0-328E-B813-6FC68622C1F9}
+
+Visual C++ 2008 SP1 ATL Security Update runtime files								2010/09/29		9.0.30729.4148
+Microsoft Visual C++ 2008 SP1 ATL (x86)  - {1F1C2DFC-2D24-3E06-BCB8-725134ADF989}
+Microsoft Visual C++ 2008 SP1 ATL (x64)  - {4B6C7001-C7D6-3710-913E-5BC23FCE91E6}
+Microsoft Visual C++ 2008 SP1 ATL (IA64) - {977AD349-C2A8-39DD-9273-285C08987C7B}
+
+Visual C++ 2008 SP1 MFC Security Update runtime files								2011/06/07
+Microsoft Visual C++ 2008 SP1 MFC (x86)  - {9BE518E6-ECC6-35A9-88E4-87755C07200F}	http://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x86.exe
+Microsoft Visual C++ 2008 SP1 MFC (x64)  - {5FCE6D76-F5DC-37AB-B2B8-22AB8CEDB1D4}	http://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x64.exe
+Microsoft Visual C++ 2008 SP1 MFC (IA64) - {515643D1-4E9E-342F-A75A-D1F16448DC04} 	http://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_IA64.exe
+
+
+// ---------------------------------------------------------------------------------------------------
+Visual C++ 2010
+// ---------------------------------------------------------------------------------------------------
+
+Visual C++ 2010 runtime files													2010/04/12
+Microsoft Visual C++ 2010 (x86) {196BB40D-1578-3D01-B289-BEFC77A11A1E}
+Microsoft Visual C++ 2010 (x64) {DA5E371C-6333-3D8A-93A4-6FD5B20BCC6E}
+Microsoft Visual C++ 2010 (IA64) {C1A35166-4301-38E9-BA67-02823AD72A1B}
+
+Visual C++ 2010 SP1 runtime files												2011/03/03		10.0.40219
+Microsoft Visual C++ 2010 SP1 (x86)  - {F0C3E5D1-1ADE-321E-8167-68EF0DE699A5}		http://download.microsoft.com/download/C/6/D/C6D0FD4E-9E53-4897-9B91-836EBA2AACD3/vcredist_x86.exe
+Microsoft Visual C++ 2010 SP1 (x64)  - {1D8E6291-B0D5-35EC-8441-6616F567A0F7}		http://download.microsoft.com/download/A/8/0/A80747C3-41BD-45DF-B505-E9710D2744E0/vcredist_x64.exe
+Microsoft Visual C++ 2010 SP1 (IA64) - {88C73C1C-2DE5-3B01-AFB8-B46EF4AB41CD}		http://download.microsoft.com/download/7/7/3/77332C03-CC6C-45E5-A7B6-E02504B93847/vcredist_IA64.exe
+
+Visual C++ 2010 SP1 MFC Security Update											2011/08/09
+Microsoft Visual C++ 2010 SP1 MFC (x86)  - {}	http://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe
+Microsoft Visual C++ 2010 SP1 MFC (x64)  - {}	http://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x64.exe
+Microsoft Visual C++ 2010 SP1 MFC (IA64) - {} 	http://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_ia64.exe
+
+
+// ---------------------------------------------------------------------------------------------------
+Visual C++ 2012
+// ---------------------------------------------------------------------------------------------------
+Visual C++ 2012 runtime files		11.0.50727.1
+Microsoft Visual C++ 2012 (x86) {2F73A7B2-E50E-39A6-9ABC-EF89E4C62E36}	http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/vcredist_x86.exe
+Microsoft Visual C++ 2012 (x64) {A2CB1ACB-94A2-32BA-A15E-7D80319F7589}	http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/vcredist_x64.exe
+
+Visual C++ 2012 Update 1		11.0.51106
+Microsoft Visual C++ 2012 (x86) HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{8E70E4E1-06D7-470B-9F74-A51BEF21088E}	http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_1/vcredist_x86.exe
+Microsoft Visual C++ 2012 (x64) HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{5AF4E09F-5C9B-3AAF-B731-544D3DC821DD}	http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_1/vcredist_x64.exe
+
+Visual C++ 2012 Update 3		11.0.60610
+Microsoft Visual C++ 2012 (x86) {E7D4E834-93EB-351F-B8FB-82CDAE623003}
+Microsoft Visual C++ 2012 (x64) {2EDC2FA3-1F34-34E5-9085-588C9EFD1CC6}
+
+Visual C++ 2012 Update 4														2013/11/20		11.0.61030
+Microsoft Visual C++ 2012 (x86) {33D1FD90-4274-48A1-9BC1-97E33D9C2D6F}	http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x86.exe
+Microsoft Visual C++ 2012 (x64) {CA67548A-5EBE-413A-B50C-4B9CEB6D66C6} 	http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\VC\Servicing\11.0\RuntimeMinimum Version
+
+{BD95A8CD-1D9F-35AD-981A-3E7925026EBB}
+{CF2BEA3C-26EA-32F8-AA9B-331F7E34BA97}
+
+x86 {33d1fd90-4274-48a1-9bc1-97e33d9c2d6f}	11.0.61030
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\
+x64 {ca67548a-5ebe-413a-b50c-4b9ceb6d66c6}
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\
+
+
+
+// ---------------------------------------------------------------------------------------------------
+InstallShield
+// ---------------------------------------------------------------------------------------------------
+http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2005 sp1 redistributable package (x86).prq
+http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2005 sp1 redistributable package (x64).prq
+
+http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2005 sp1 redistributable mfc security update kb2538242(x86).prq
+http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2005 sp1 redistributable mfc security update kb2538242(x64).prq
+
+http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2008 sp1 redistributable package (x86).prq
+http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2008 sp1 redistributable package (x64).prq
+
+http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2008 sp1 redistributable mfc security update kb2538243(x86).prq
+http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2008 sp1 redistributable mfc security update kb2538243(x64).prq
+
+http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2010 redistributable package (x86).prq
+http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2010 redistributable package (x64).prq
+
+http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2010 rtm redistributable mfc security update kb2467173 (x86).prq
+http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2010 rtm redistributable mfc security update kb2467173 (x64).prq
+
+http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2010 sp1 redistributable package (x86).prq
+http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2010 sp1 redistributable package (x64).prq
+
+http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2012 redistributable package (x86).prq
+http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2012 redistributable package (x64).prq
+
+http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2012 update 1 redistributable package (x86).prq
+http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2012 update 1 redistributable package (x64).prq
+
+http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2012 update 4 redistributable package (x86).prq
+http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2012 update 4 redistributable package (x64).prq
