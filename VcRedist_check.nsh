@@ -43,8 +43,10 @@
 	Var	VCREDIST_FILE
 	Var	VCREDIST_FOUND
 	Var	VCREDIST_REBOOT
+!ifdef VCREDIST2012
 	Var	VCREDIST_VERSION
-	
+!endif
+
 ; ======================================================
 ;  Reset Counters
 ; ======================================================
@@ -73,7 +75,7 @@ FunctionEnd
 ; ======================================================
 Function "InstallVCRedist"
 !ifdef VCREDIST2005
-	${If} $X86_2005> 0
+	${If} $X86_2005 > 0
 		Call 2005vcredistX86
 	${EndIf}
 	${If} $X64_2005 > 0
@@ -286,6 +288,7 @@ Function "CheckRedistVC10"
 FunctionEnd
 */
 
+!ifdef VCREDIST2012
 Function "CheckRedistVC12"
 	StrCpy $VCREDIST_FOUND	"0"
 	StrCpy $R9 $VCREDIST_NAME
@@ -318,6 +321,7 @@ Function "CheckRedistVC12"
 	
 	Call RedistDownloadAndInstall
 FunctionEnd
+!endif
 
 
 ; ======================================================
@@ -343,7 +347,7 @@ Function "RedistDownloadAndInstall"
 !endif
 
 		ClearErrors
-		ExecWait '$TEMP\$VCREDIST_FILE ${VCCOMMAND}' $0
+		ExecWait '$TEMP\$VCREDIST_FILE ${VCREDIST_COMMAND}' $0
 		${If} $0 == "0"
 			DetailPrint "$(LocS_VC_SystemReturn)"
 		${Else}
