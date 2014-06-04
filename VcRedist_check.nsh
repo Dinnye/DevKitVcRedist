@@ -338,7 +338,7 @@ Function "RedistDownloadAndInstall"
 		File /oname=$TEMP\$VCREDIST_FILE "${VCREDIST_ROOT}\$VCREDIST_PATH"
 !else
 		ClearErrors
-		NSISdl::download /TIMEOUT=30000 "$VCREDIST_PATH" "$TEMP\$VCREDIST_FILE"
+		NSISdl::download /TIMEOUT=30000 "$VCREDIST_URL" "$TEMP\$VCREDIST_FILE"
 		Pop $R0 ;Get the return value
 		StrCmp $R0 "success" +4
 			MessageBox MB_ICONSTOP "$(LocS_VC_Download_Failed): $R0"
