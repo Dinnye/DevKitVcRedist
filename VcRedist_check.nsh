@@ -266,9 +266,9 @@ Function "CheckRedistWithWinSxs"
 	
 	ClearErrors
 	ReadRegStr $0 HKLM "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$VCREDIST_GUID" "DisplayName"
-	;${If} $0 != ""
-	;	StrCpy $VCREDIST_FOUND "1"
-	;${EndIf}
+	${If} $0 != ""
+		StrCpy $VCREDIST_FOUND "1"
+	${EndIf}
 	
 	Call RedistDownloadAndInstall
 FunctionEnd
