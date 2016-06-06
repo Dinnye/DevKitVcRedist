@@ -7,6 +7,8 @@
 	!define	VCREDIST2008
 	!define VCREDIST2010
 	!define	VCREDIST2012
+	!define	VCREDIST2013
+	!define	VCREDIST2015
 
 	!define	VCREDIST_ROOT		""
 	!define VCREDIST_COMMAND	"/q:a"
