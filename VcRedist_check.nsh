@@ -32,7 +32,15 @@
 	Var X86_2012
 	Var X64_2012
 !endif
-		
+!ifdef VCREDIST2013
+	Var X86_2013
+	Var X64_2013
+!endif
+!ifdef VCREDIST2015
+	Var X86_2015
+	Var X64_2015
+!endif
+
 ; --------------------------------
 ;  Internal Variables
 	Var	VCREDIST_NAME
@@ -43,6 +51,7 @@
 	Var	VCREDIST_FILE
 	Var	VCREDIST_FOUND
 	Var	VCREDIST_REBOOT
+	Var	VCREDIST_CODE
 !ifdef VCREDIST2012
 	Var	VCREDIST_VERSION
 !endif
@@ -67,6 +76,14 @@ Function "ResetVCRedistCounter"
 !ifdef VCREDIST2012
 	IntOp $X86_2012 $X86_2012 ^ $X86_2012
 	IntOp $X64_2012 $X64_2012 ^ $X64_2012
+!endif
+!ifdef VCREDIST2013
+	IntOp $X86_2013 $X86_2013 ^ $X86_2013
+	IntOp $X64_2013 $X64_2013 ^ $X64_2013
+!endif
+!ifdef VCREDIST2015
+	IntOp $X86_2015 $X86_2015 ^ $X86_2015
+	IntOp $X64_2015 $X64_2015 ^ $X64_2015
 !endif
 FunctionEnd
 
@@ -104,6 +121,22 @@ Function "InstallVCRedist"
 	${EndIf}
 	${If} $X64_2012 > 0
 		Call 2012vcredistX64
+	${EndIf}
+!endif
+!ifdef VCREDIST2013
+	${If} $X86_2013 > 0
+		Call 2013vcredistX86
+	${EndIf}
+	${If} $X64_2013 > 0
+		Call 2013vcredistX64
+	${EndIf}
+!endif
+!ifdef VCREDIST2015
+	${If} $X86_2015 > 0
+		Call 2015vcredistX86
+	${EndIf}
+	${If} $X64_2015 > 0
+		Call 2015vcredistX64
 	${EndIf}
 !endif
 FunctionEnd
@@ -223,13 +256,14 @@ Function "2012vcredistX86"
 	StrCpy $VCREDIST_FILE	"vcredist_2012_x86.exe"
 	StrCpy $VCREDIST_REBOOT	";1641;3010;"
 	StrCpy $VCREDIST_IS64	"0"
+	StrCpy $VCREDIST_CODE	"11.0"
 !ifdef VCREDIST_OFFLINEMODE
 	File /oname=$TEMP\$VCREDIST_FILE "${VCREDIST_ROOT}vcRedist_2012\x86_update_4\vcredist_x86.exe"
 !endif
 	IntOp $VCREDIST_VERSION $VCREDIST_VERSION ^ $VCREDIST_VERSION
 	IntOp $VCREDIST_VERSION $VCREDIST_VERSION + 61030
 	
-	Call CheckRedistVC12
+	Call CheckRedist
 FunctionEnd
 
 Function "2012vcredistX64"
@@ -240,13 +274,96 @@ Function "2012vcredistX64"
 	StrCpy $VCREDIST_FILE	"vcredist_2012_x64.exe"
 	StrCpy $VCREDIST_REBOOT	";1641;3010;"
 	StrCpy $VCREDIST_IS64	"1"
+	StrCpy $VCREDIST_CODE	"11.0"
 !ifdef VCREDIST_OFFLINEMODE
 	File /oname=$TEMP\$VCREDIST_FILE "${VCREDIST_ROOT}vcRedist_2012\x64_update_4\vcredist_x64.exe"
 !endif
 	IntOp $VCREDIST_VERSION $VCREDIST_VERSION ^ $VCREDIST_VERSION
 	IntOp $VCREDIST_VERSION $VCREDIST_VERSION + 61030
 	
-	Call CheckRedistVC12
+	Call CheckRedist
+FunctionEnd
+!endif
+
+; ======================================================
+;  VCREDIST 2013
+; ======================================================
+!ifdef VCREDIST2013
+Function "2013vcredistX86"
+	StrCpy $VCREDIST_NAME	"Visual C++ 2013 (x86)"
+	StrCpy $VCREDIST_GUID	"{f65db027-aff3-4070-886a-0d87064aabb1}"
+	StrCpy $VCREDIST_PATH	"vcRedist_2012\x86\vcredist_x86.exe"
+	StrCpy $VCREDIST_URL	"https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x86.exe"
+	StrCpy $VCREDIST_FILE	"vcredist_2013_x86.exe"
+	StrCpy $VCREDIST_REBOOT	";1641;3010;"
+	StrCpy $VCREDIST_IS64	"0"
+	StrCpy $VCREDIST_CODE	"12.0"
+!ifdef VCREDIST_OFFLINEMODE
+	//File /oname=$TEMP\$VCREDIST_FILE "${VCREDIST_ROOT}vcRedist_2013\x86_update_4\vcredist_x86.exe"
+!endif
+	IntOp $VCREDIST_VERSION $VCREDIST_VERSION ^ $VCREDIST_VERSION
+	IntOp $VCREDIST_VERSION $VCREDIST_VERSION + 61030
+	
+	Call CheckRedist
+FunctionEnd
+
+Function "2013vcredistX64"
+	StrCpy $VCREDIST_NAME	"Visual C++ 2013 (x64)"
+	StrCpy $VCREDIST_GUID	"{050d4fc8-5d48-4b8f-8972-47c82c46020f}"
+	StrCpy $VCREDIST_PATH	"vcRedist_2013\x64\vcredist_x64.exe"
+	StrCpy $VCREDIST_URL	"https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x64.exe"
+	StrCpy $VCREDIST_FILE	"vcredist_2013_x64.exe"
+	StrCpy $VCREDIST_REBOOT	";1641;3010;"
+	StrCpy $VCREDIST_IS64	"1"
+	StrCpy $VCREDIST_CODE	"12.0"
+!ifdef VCREDIST_OFFLINEMODE
+	//File /oname=$TEMP\$VCREDIST_FILE "${VCREDIST_ROOT}vcRedist_2013\x64_update_4\vcredist_x64.exe"
+!endif
+	IntOp $VCREDIST_VERSION $VCREDIST_VERSION ^ $VCREDIST_VERSION
+	IntOp $VCREDIST_VERSION $VCREDIST_VERSION + 61030
+	
+	Call CheckRedist
+FunctionEnd
+!endif
+
+; ======================================================
+;  VCREDIST 2015
+; ======================================================
+!ifdef VCREDIST2015
+Function "2015vcredistX86"
+	StrCpy $VCREDIST_NAME	"Visual C++ 2015 Update 2 (x86)"
+	StrCpy $VCREDIST_GUID	"{2e085fd2-a3e4-4b39-8e10-6b8d35f55244}"
+	StrCpy $VCREDIST_PATH	"vcRedist_2015\x86_update_2\vc_redist.x86.exe"
+	StrCpy $VCREDIST_URL	"https://download.microsoft.com/download/0/5/0/0504B211-6090-48B1-8DEE-3FF879C29968/vc_redist.x86.exe"
+	StrCpy $VCREDIST_FILE	"vcredist_2012_x86.exe"
+	StrCpy $VCREDIST_REBOOT	";1641;3010;"
+	StrCpy $VCREDIST_IS64	"0"
+	StrCpy $VCREDIST_CODE	"14.0"
+!ifdef VCREDIST_OFFLINEMODE
+	File /oname=$TEMP\$VCREDIST_FILE "${VCREDIST_ROOT}vcRedist_2015\x86_update_2\vc_redist.x86.exe"
+!endif
+	IntOp $VCREDIST_VERSION $VCREDIST_VERSION ^ $VCREDIST_VERSION
+	IntOp $VCREDIST_VERSION $VCREDIST_VERSION + 61030
+	
+	Call CheckRedist
+FunctionEnd
+
+Function "2015vcredistX64"
+	StrCpy $VCREDIST_NAME	"Visual C++ 2015 Update 2 (x64)"
+	StrCpy $VCREDIST_GUID	"{dab68466-3a7d-41a8-a5cf-415e3ff8ef71}"
+	StrCpy $VCREDIST_PATH	"vcRedist_2015\x64_update_2\vc_redist.x64.exe"
+	StrCpy $VCREDIST_URL	"https://download.microsoft.com/download/0/5/0/0504B211-6090-48B1-8DEE-3FF879C29968/vc_redist.x64.exe"
+	StrCpy $VCREDIST_FILE	"vcredist_2015_x64.exe"
+	StrCpy $VCREDIST_REBOOT	";1641;3010;"
+	StrCpy $VCREDIST_IS64	"1"
+	StrCpy $VCREDIST_CODE	"14.0"
+!ifdef VCREDIST_OFFLINEMODE
+	File /oname=$TEMP\$VCREDIST_FILE "${VCREDIST_ROOT}vcRedist_2015\x64_update_2\vc_redist.x64.exe"
+!endif
+	IntOp $VCREDIST_VERSION $VCREDIST_VERSION ^ $VCREDIST_VERSION
+	IntOp $VCREDIST_VERSION $VCREDIST_VERSION + 61030
+	
+	Call CheckRedist
 FunctionEnd
 !endif
 
@@ -304,24 +421,24 @@ Function "CheckRedistVC10"
 FunctionEnd
 */
 
-!ifdef VCREDIST2012
-Function "CheckRedistVC12"
+;!ifdef VCREDIST2012
+Function "CheckRedist"
 	StrCpy $VCREDIST_FOUND	"0"
 	StrCpy $R9 $VCREDIST_NAME
 	;StrCpy $1 "SOFTWARE\Microsoft\DevDiv\vc\Servicing\11.0\RuntimeMinimum"
 	
 	${If} $VCREDIST_IS64 == "1"
 		${If} ${RunningX64}
-			StrCpy $1 "SOFTWARE\Wow6432Node\Microsoft\VisualStudio\11.0\VC\Runtimes\x64"
+			StrCpy $1 "SOFTWARE\Wow6432Node\Microsoft\VisualStudio\$VCREDIST_CODE\VC\Runtimes\x64"
 		${Else}
-			StrCpy $1 "SOFTWARE\\Microsoft\VisualStudio\11.0\VC\Runtimes\x64"
+			StrCpy $1 "SOFTWARE\\Microsoft\VisualStudio\$VCREDIST_CODE\VC\Runtimes\x64"
 		${EndIf}
 		SetRegView 64
 	${Else}
 		${If} ${RunningX64}
-			StrCpy $1 "SOFTWARE\Wow6432Node\Microsoft\VisualStudio\11.0\VC\Runtimes\x86"
+			StrCpy $1 "SOFTWARE\Wow6432Node\Microsoft\VisualStudio\$VCREDIST_CODE\VC\Runtimes\x86"
 		${Else}
-			StrCpy $1 "SOFTWARE\\Microsoft\VisualStudio\11.0\VC\Runtimes\x86"
+			StrCpy $1 "SOFTWARE\\Microsoft\VisualStudio\$VCREDIST_CODE\VC\Runtimes\x86"
 		${EndIf}
 		SetRegView 32
 	${EndIf}
@@ -337,7 +454,7 @@ Function "CheckRedistVC12"
 	
 	Call RedistDownloadAndInstall
 FunctionEnd
-!endif
+;!endif
 
 
 ; ======================================================

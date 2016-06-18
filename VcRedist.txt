@@ -1,9 +1,16 @@
 http://blogs.msdn.com/b/astebner/archive/2009/01/29/9384143.aspx
 http://support.microsoft.com/kb/2019667
 http://msdn.microsoft.com/en-us/library/vstudio/bb164659%28v=vs.110%29.aspx
+http://stackoverflow.com/questions/12206314/detect-if-visual-c-redistributable-for-visual-studio-2012-is-installed
+
 
 // ---------------------------------------------------------------------------------------------------
-Visual C++ 2005
+Visual C++
+// ---------------------------------------------------------------------------------------------------
+https://support.microsoft.com/en-us/kb/2977003
+
+// ---------------------------------------------------------------------------------------------------
+Visual C++ 2005			(VC++ 8.0)
 // ---------------------------------------------------------------------------------------------------
 
 Visual C++ 2005 runtime files												2006/04/10
@@ -28,7 +35,7 @@ Visual C++ 2005 SP1 MFC (a64) - {C2F60BDA-462A-4A72-8E4D-CA431A56E9EA}		http://d
 
 
 // ---------------------------------------------------------------------------------------------------
-Visual C++ 2008
+Visual C++ 2008			(VC++ 9.0)
 // ---------------------------------------------------------------------------------------------------
 
 Visual C++ 2008 runtime files														2007/11/29		9.0.21022
@@ -53,7 +60,7 @@ Microsoft Visual C++ 2008 SP1 MFC (IA64) - {515643D1-4E9E-342F-A75A-D1F16448DC04
 
 
 // ---------------------------------------------------------------------------------------------------
-Visual C++ 2010
+Visual C++ 2010			(VC++ 10.0)
 // ---------------------------------------------------------------------------------------------------
 
 Visual C++ 2010 runtime files													2010/04/12
@@ -73,7 +80,7 @@ Microsoft Visual C++ 2010 SP1 MFC (IA64) - {} 	http://download.microsoft.com/dow
 
 
 // ---------------------------------------------------------------------------------------------------
-Visual C++ 2012
+Visual C++ 2012			(VC++ 11.0)
 // ---------------------------------------------------------------------------------------------------
 Visual C++ 2012 runtime files		11.0.50727.1
 Microsoft Visual C++ 2012 (x86) {2F73A7B2-E50E-39A6-9ABC-EF89E4C62E36}	http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/vcredist_x86.exe
@@ -87,7 +94,7 @@ Visual C++ 2012 Update 3		11.0.60610
 Microsoft Visual C++ 2012 (x86) {E7D4E834-93EB-351F-B8FB-82CDAE623003}
 Microsoft Visual C++ 2012 (x64) {2EDC2FA3-1F34-34E5-9085-588C9EFD1CC6}
 
-Visual C++ 2012 Update 4														2013/11/20		11.0.61030
+Visual C++ 2012 Update 4		11.0.61030			2013/11/20
 Microsoft Visual C++ 2012 (x86) {33D1FD90-4274-48A1-9BC1-97E33D9C2D6F}	http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x86.exe
 Microsoft Visual C++ 2012 (x64) {CA67548A-5EBE-413A-B50C-4B9CEB6D66C6} 	http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe
 
@@ -101,7 +108,25 @@ x86 {33d1fd90-4274-48a1-9bc1-97e33d9c2d6f}	11.0.61030
 x64 {ca67548a-5ebe-413a-b50c-4b9ceb6d66c6}
 [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\
 
+// ---------------------------------------------------------------------------------------------------
+Visual C++ 2013			(VC++ 12.0)
+// ---------------------------------------------------------------------------------------------------
+Visual C++ 2013 runtime files		12.0.30501.0		2014/12/30
+Microsoft Visual C++ 2013 (x86) {f65db027-aff3-4070-886a-0d87064aabb1}	https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x86.exe
+Microsoft Visual C++ 2013 (x64) {050d4fc8-5d48-4b8f-8972-47c82c46020f}	https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x64.exe
 
+// ---------------------------------------------------------------------------------------------------
+Visual C++ 2015			(VC++ 14.0)
+// ---------------------------------------------------------------------------------------------------
+Visual C++ 2015 runtime files			2015/07/10
+https://www.microsoft.com/en-us/download/details.aspx?id=48145
+Microsoft Visual C++ 2015 (x86) {}
+Microsoft Visual C++ 2015 (x64) {}
+
+Visual C++ 2015 Update 2			14.0.23918		2016/04/05
+https://www.microsoft.com/en-us/download/details.aspx?id=51682
+Microsoft Visual C++ 2015 (x86) {2e085fd2-a3e4-4b39-8e10-6b8d35f55244}	https://download.microsoft.com/download/0/5/0/0504B211-6090-48B1-8DEE-3FF879C29968/vc_redist.x86.exe
+Microsoft Visual C++ 2015 (x64) {dab68466-3a7d-41a8-a5cf-415e3ff8ef71}	https://download.microsoft.com/download/0/5/0/0504B211-6090-48B1-8DEE-3FF879C29968/vc_redist.x64.exe
 
 // ---------------------------------------------------------------------------------------------------
 InstallShield
