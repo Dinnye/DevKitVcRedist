@@ -128,35 +128,7 @@ https://www.microsoft.com/en-us/download/details.aspx?id=51682
 Microsoft Visual C++ 2015 (x86) {2e085fd2-a3e4-4b39-8e10-6b8d35f55244}	https://download.microsoft.com/download/0/5/0/0504B211-6090-48B1-8DEE-3FF879C29968/vc_redist.x86.exe
 Microsoft Visual C++ 2015 (x64) {dab68466-3a7d-41a8-a5cf-415e3ff8ef71}	https://download.microsoft.com/download/0/5/0/0504B211-6090-48B1-8DEE-3FF879C29968/vc_redist.x64.exe
 
-// ---------------------------------------------------------------------------------------------------
-InstallShield
-// ---------------------------------------------------------------------------------------------------
-http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2005 sp1 redistributable package (x86).prq
-http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2005 sp1 redistributable package (x64).prq
-
-http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2005 sp1 redistributable mfc security update kb2538242(x86).prq
-http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2005 sp1 redistributable mfc security update kb2538242(x64).prq
-
-http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2008 sp1 redistributable package (x86).prq
-http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2008 sp1 redistributable package (x64).prq
-
-http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2008 sp1 redistributable mfc security update kb2538243(x86).prq
-http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2008 sp1 redistributable mfc security update kb2538243(x64).prq
-
-http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2010 redistributable package (x86).prq
-http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2010 redistributable package (x64).prq
-
-http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2010 rtm redistributable mfc security update kb2467173 (x86).prq
-http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2010 rtm redistributable mfc security update kb2467173 (x64).prq
-
-http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2010 sp1 redistributable package (x86).prq
-http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2010 sp1 redistributable package (x64).prq
-
-http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2012 redistributable package (x86).prq
-http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2012 redistributable package (x64).prq
-
-http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2012 update 1 redistributable package (x86).prq
-http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2012 update 1 redistributable package (x64).prq
-
-http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2012 update 4 redistributable package (x86).prq
-http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2012 update 4 redistributable package (x64).prq
+Visual C++ 2015 Update 3			14.0.24210		2016/06/22
+https://www.microsoft.com/en-us/download/details.aspx?id=52982
+Microsoft Visual C++ 2015 (x86) {23658c02-145e-483d-ba6b-1eb82c580529}	https://download.microsoft.com/download/4/2/F/42FF78CE-8DE0-4C88-AD7A-5F8DFFB49F74/vc_redist.x86.exe
+Microsoft Visual C++ 2015 (x64) {f144e08f-9cbe-4f09-9a8c-f2b858b7ee7f}	https://download.microsoft.com/download/4/2/F/42FF78CE-8DE0-4C88-AD7A-5F8DFFB49F74/vc_redist.x64.exe
