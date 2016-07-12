@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SetupPrereq>
+  <conditions>
+    <condition Type="32" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\SharedManagementObjects\CurrentVersion" FileName="Version" ReturnValue="10.1.2531.0" Bits="1"></condition>
+  </conditions>
+  <operatingsystemconditions>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1" ProductType="1" ServicePackMajorMin="3"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="2" ProductType="1" ServicePackMajorMin="3"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" ProductType="2|3" ServicePackMajorMin="2"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" ProductType="1" ServicePackMajorMin="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" ProductType="2|3"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="1" ProductType="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="3" PlatformId="2" CSDVersion="" Bits="1" ProductType="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="10" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="1" ProductType="1"></operatingsystemcondition>
+  </operatingsystemconditions>
+  <files>
+    <file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\SQLFeaturePack\10.00.2531\x86\SharedManagementObjects.msi" URL="http://download.microsoft.com/download/0/E/6/0E67502A-22B4-4C47-92D3-0D223F117190/SharedManagementObjects.msi" CheckSum="C67681B4B36BC28C924943917502EAA6" FileSize="0,4736512"></file>
+  </files>
+  <execute file="SharedManagementObjects.msi" cmdlinesilent="/qn" requiresmsiengine="1"></execute>
+  <dependencies>
+    <dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft SQL Server System CLR Types 10.00.2531 (x86).prq"></dependency>
+  </dependencies>
+  <properties Id="Microsoft SQL Server 2008 Management Objects 10.00.2531 (x86)" Description="The SQL Server Management Objects (SMO) is a .NET Framework object model that enables software developers to create client-side applications to manage and administer SQL Server objects and services. This object model will work with SQL Server 2000, SQL Server 2005 and SQL Server 2008.&#xA;" AltPrqURL="http://saturn.installshield.com/devstudio/setuprequirements/sqlfeaturepack/10.00.2531/Microsoft SQL Server 2008 Management Objects 10.00.2531 (x86).prq"></properties>
+</SetupPrereq>

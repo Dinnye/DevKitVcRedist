@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="1" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{CE26F10F-C80F-4377-908B-1B7882AE2CE3}" FileName="" ReturnValue=""></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1" ProductType="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="1" ProductType="2|3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="1" ProductType="2|3"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bootstrapper\Packages\CrystalReports10_5\CRRedist2008_x86.msi" CheckSum="C931B3CBA27BA9289F502CB98CB2A5C8" FileSize="0,17964544"></file>
+	</files>
+	<execute file="CRRedist2008_x86.msi" cmdline="/qn /norestart" cmdlinesilent="/qn /norestart" returncodetoreboot="1641,3010" requiresmsiengine="1"></execute>
+	<properties Id="{a0689fe9-3467-4d73-bc25-d0f696ad268a}" Description="This prerequisite installs the Crystal Reports Basic Runtime for Visual Studio 2008 for x86-based systems, which you must obtain from Crystal Reports. Before building a release that includes this prerequisite, place the CRRedist2008_x86.msi file in the following location: C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bootstrapper\Packages\CrystalReports10_5." AltPrqURL="http://saturn.installshield.com/is/prerequisites/crystal reports basic for visual studio 2008 (x86).prq"></properties>
+	<behavior Reboot="32"></behavior>
+</SetupPrereq>

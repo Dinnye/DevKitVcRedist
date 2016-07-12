@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="2" Comparison="32" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v2.0.50727\1036" FileName="Install" ReturnValue="1"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="8" ProductType="2|3"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .net\2.0\IA64\LangPack\French\langpack.exe" URL="http://www.microsoft.com/downloads/info.aspx?na=90&amp;p=&amp;SrcDisplayLang=fr&amp;SrcCategoryId=&amp;SrcFamilyId=83BB3BF2-599B-46FB-8816-7DED9605D8B2&amp;u=http%3a%2f%2fdownload.microsoft.com%2fdownload%2f1%2fd%2fc%2f1dc20b9c-ee0d-49e3-9315-e0ada3e16972%2flangpack.exe" CheckSum="B229DDA434A9BE77098CA2EDA927BC60" FileSize="0,3384000"></file>
+	</files>
+	<execute file="langpack.exe" cmdline="/q:a /c:&quot;install /l /q&quot;" cmdlinesilent="/q:a /c:&quot;install /l /q&quot;" returncodetoreboot="3010, 8192" requiresmsiengine="1"></execute>
+	<dependencies>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .NET Framework 2.0 (IA64).prq"></dependency>
+	</dependencies>
+	<properties Id="{46700C83-C3FA-45fd-B617-770329E95AF0}" Description="This prerequisite installs the French .net 2.0 language pack for Itanium systems." AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft .net framework 2.0 (ia64) language pack - french.prq"></properties>
+</SetupPrereq>

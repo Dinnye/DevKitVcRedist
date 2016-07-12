@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="2" Comparison="32" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5\1038" FileName="Install" ReturnValue="1"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4" ProductType="1"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .net\3.5\x64\LangPack\Hungarian\dotnetfx35langpack_x64hu.exe" URL="http://download.microsoft.com/download/1/0/0/100f7296-179c-4b2e-94ae-03ba488bef17/dotnetfx35langpack_x64hu.exe" CheckSum="5F3E71B3909FE2BEE76D93099AD727A7" FileSize="0,8856608"></file>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .net\3.5\Full\Helper.exe" URL="http://saturn.installshield.com/devstudio/setuprequirements/Microsoft .net/3.5/Helper.exe" CheckSum="AD29C3DEC8FB0CFDAFE8548371B0EE6D" FileSize="0,128472"></file>
+	</files>
+	<execute file="Helper.exe" cmdline="/p dotnetfx35langpack_x64hu.exe /v &quot;/q /norestart&quot;" cmdlinesilent="/p dotnetfx35langpack_x64hu.exe /v &quot;/q /norestart&quot;" returncodetoreboot="1641,3010" requiresmsiengine="1"></execute>
+	<dependencies>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .NET Framework 3.5.prq"></dependency>
+	</dependencies>
+	<properties Id="{04f9be90-fb50-47e0-9c94-7cad6f3ad501}" Description="This prerequisite installs the .NET 3.5 framework Hungarian language pack for 64-bit (x64) systems." AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft .net framework 3.5 (x64) language pack - hungarian.prq"></properties>
+	<behavior Reboot="2"></behavior>
+</SetupPrereq>

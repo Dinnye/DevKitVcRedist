@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="16" Comparison="2" Path="[HKEY_LOCAL_MACHINE\SOFTWARE\ORACLE\ORACLE_HOME]bin" FileName="oci.dll" ReturnValue="10.2.0.1"></condition>
+		<condition Type="16" Comparison="2" Path="oci.dll" FileName="" ReturnValue="10.2.0.1"></condition>
+	</conditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\oracle\Oracle10g Instant Client 10.2.msi" CheckSum="47EB729ED69B622491717F6EEF179A45" FileSize="0,35866112"></file>
+	</files>
+	<execute file="Oracle10g Instant Client 10.2.msi" cmdlinesilent="/qn" requiresmsiengine="1"></execute>
+	<properties Id="{A62484D2-B39F-46D9-A1A6-A6226CDAF13D}" Description="This installs the Oracle10g Instant Client 10.2.0.2 to the end user's system. It also sets the PATH and TNS_ADMIN environment variables to the Instant Client directory. You will need to obtain this redistributable from Oracle before using this prerequisite. Before building a release that includes this prerequisite, place the Oracle10g Instant Client 10.2.msi file in the following location: InstallShield Program Files Folder\SetupPrerequisites\oracle\"></properties>
+</SetupPrereq>

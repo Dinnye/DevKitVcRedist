@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="2" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5" FileName="Version" ReturnValue="3.5.21022.08"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1" ProductType="1" ServicePackMajorMin="2"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" ProductType="2|3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="2" ProductType="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" ProductType="2|3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" ProductType="1"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .net\3.5\Web\dotNetFx35setup.exe" URL="http://download.microsoft.com/download/7/0/3/703455ee-a747-4cc8-bd3e-98a615c3aedb/dotNetFx35setup.exe" CheckSum="269F314B87E6222A20E5F745B6B89783" FileSize="0,2869264"></file>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .net\3.5\Web\Helper.exe" URL="http://saturn.installshield.com/devstudio/setuprequirements/Microsoft .net/3.5/Helper.exe" CheckSum="AD29C3DEC8FB0CFDAFE8548371B0EE6D" FileSize="0,128472"></file>
+	</files>
+	<execute file="Helper.exe" cmdline="/p dotNetFx35setup.exe /l 1033 /v &quot;/q /norestart&quot;" cmdlinesilent="/p dotNetFx35setup.exe /l 1033 /v &quot;/q /norestart&quot;" returncodetoreboot="1641,3010" requiresmsiengine="1"></execute>
+	<properties Id="{74B208DA-5058-4651-98C8-33CEB941E7EC}" Description="This prerequisite installs the .NET Framework 3.5 web download package." AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft .net framework 3.5 (Web Download).prq"></properties>
+	<behavior Reboot="2"></behavior>
+</SetupPrereq>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="16" Comparison="2" Path="[SystemFolder]" FileName="msi.dll" ReturnValue="3.1.4000.2435"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="0" PlatformId="2" CSDVersion="" ServicePackMajorMin="3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1" ProductType="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="1" ProductType="2|3" ServicePackMajorMax="0"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Windows Installer\3.1\x86\WindowsInstaller-KB893803-v2-x86.exe" URL="http://download.microsoft.com/download/1/4/7/147ded26-931c-4daf-9095-ec7baf996f46/WindowsInstaller-KB893803-v2-x86.exe" FileSize="0,0"></file>
+	</files>
+	<execute file="WindowsInstaller-KB893803-v2-x86.exe" cmdline="/quiet /norestart" cmdlinesilent="/quiet /norestart" returncodetoreboot="3010,8192,1641"></execute>
+	<properties Id="{57bcd1d4-2de9-49d9-bc0c-3f4263e9970e}" Description="This prerequisite installs the Windows Installer 3.1 engine on x86-based systems running Windows 2000 SP3 or greater, Windows XP or Windows XP SP1 or Windows XP SP2, or Windows Server 2003 SP0." AltPrqURL="http://saturn.installshield.com/is/prerequisites/windows installer 3.1 (x86).prq"></properties>
+	<behavior Reboot="32"></behavior>
+</SetupPrereq>

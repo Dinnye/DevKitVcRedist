@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="16" Comparison="2" Path="[SystemFolder]" FileName="msi.dll" ReturnValue="3.1.4000.2435"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3" ServicePackMajorMin="1"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Windows Installer\3.1\x64\WindowsServer2003-KB898715-x64-jpn.exe" URL="http://saturn.installshield.com/devstudio/setuprequirements/msi31/WindowsServer2003-KB898715-x64-jpn.exe" CheckSum="DB81633EEBD3BDEC084FCDDB782591B8" FileSize="0,4583664"></file>
+	</files>
+	<execute file="WindowsServer2003-KB898715-x64-jpn.exe" cmdline="/quiet /norestart" cmdlinesilent="/quiet /norestart" returncodetoreboot="3010,8192,1641"></execute>
+	<properties Id="Windows Installer 3.1 for Windows Server 2003 SP1 (x64) - Japanese" Description="This prerequisite installs the Windows Installer 3.1 engine on x64-based systems running Windows Server 2003 SP1 Japanese." AltPrqURL="http://saturn.installshield.com/is/prerequisites/windows installer 3.1 for windows server 2003 sp1 (x64) - japanese.prq"></properties>
+	<behavior Reboot="2"></behavior>
+</SetupPrereq>

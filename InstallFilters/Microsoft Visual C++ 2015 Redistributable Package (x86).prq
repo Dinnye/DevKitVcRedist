@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="1" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{A2563E55-3BEC-3828-8D67-E5E8B9E8B675}" FileName="" ReturnValue="" Bits="1"/>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" ServicePackMajorMin="2"/>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" ServicePackMajorMin="1"/>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="2" PlatformId="2" CSDVersion=""/>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="3" PlatformId="2" CSDVersion=""/>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" ProductType="2|3" ServicePackMajorMin="2"/>
+		<operatingsystemcondition MajorVersion="10" MinorVersion="0" PlatformId="2" CSDVersion=""/>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1" ProductType="1" ServicePackMajorMin="3"/>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\VC 2015 Redist\vc_redist.x86.exe" URL="http://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x86.exe" CheckSum="1A15E6606BAC9647E7AD3CAA543377CF" FileSize="0,13767776"/>
+	</files>
+	<execute file="vc_redist.x86.exe" cmdline="/q" cmdlinesilent="/q" returncodetoreboot="1641,3010"/>
+	<properties Id="{29AE0051-88F8-4ED7-A6F9-7EA37A6B11A3}" Description="This prerequisite installs the Microsoft Visual C++ 2015 Runtime Libraries (x86)." AltPrqURL="http://saturn.installshield.com/is/prerequisites/Microsoft Visual C++ 2015 Redistributable Package (x86).prq"/>
+	<behavior Reboot="2"/>
+</SetupPrereq>

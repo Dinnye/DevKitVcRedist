@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="2" Comparison="32" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v2.0.50727\1036" FileName="Install" ReturnValue="1"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .net\2.0\x64\LangPack\French\langpack.exe" URL="http://www.microsoft.com/downloads/info.aspx?na=90&amp;p=&amp;SrcDisplayLang=fr&amp;SrcCategoryId=&amp;SrcFamilyId=92E0E1CE-8693-4480-84FA-7D85EEF59016&amp;u=http%3a%2f%2fdownload.microsoft.com%2fdownload%2f9%2f3%2f0%2f9308ef98-b102-4c83-8c9a-931fca9ba021%2flangpack.exe" CheckSum="575A1A3A5D03EE597C09AB00B5B77702" FileSize="0,3093696"></file>
+	</files>
+	<execute file="langpack.exe" cmdline="/q:a /c:&quot;install /l /q&quot;" cmdlinesilent="/q:a /c:&quot;install /l /q&quot;" returncodetoreboot="3010, 8192" requiresmsiengine="1"></execute>
+	<dependencies>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .NET Framework 2.0 (x64).prq"></dependency>
+	</dependencies>
+	<properties Id="{8722776C-1586-476a-BD38-2108C846BC96}" Description="This prerequisite installs the French .net 2.0 language pack for x64 systems." AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft .net framework 2.0 (x64) language pack - french.prq"></properties>
+</SetupPrereq>

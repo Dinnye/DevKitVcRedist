@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="32" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v2.0.50727" FileName="SP" ReturnValue="2"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1" ProductType="1" ServicePackMajorMin="2"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="1" ProductType="2|3" ServicePackMajorMin="1"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .net\2.0SP2\x86\NetFx20SP2_x86.exe" URL="http://download.microsoft.com/download/c/6/e/c6e88215-0178-4c6c-b5f3-158ff77b1f38/NetFx20SP2_x86.exe" CheckSum="C64FD1F972822ED84378C7058FEA0744" FileSize="0,25001480"></file>
+	</files>
+	<execute file="NetFx20SP2_x86.exe" cmdline="/q /norestart" cmdlinesilent="/q /norestart" returncodetoreboot="3010,8192,1641" requiresmsiengine="1"></execute>
+	<properties Id="{9277CA1D-4C87-4A9F-928F-0E95A021FA49}" Description="This prerequisite installs the .NET 2.0 SP2 framework for x86 systems. On Windows 2000 SP4, you must install Microsoft KB 835732 before installing .NET Framework 2.0 Service Pack 2. &#xA;" AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft .net framework 2.0 sp2.prq"></properties>
+	<behavior Reboot="2"></behavior>
+</SetupPrereq>

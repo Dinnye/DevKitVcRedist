@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="16" Comparison="2" Path="[SystemFolder]" FileName="msi.dll" ReturnValue="4.5.6001.22159"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1" ProductType="1" ServicePackMajorMin="2"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Windows Installer\4.5\x86\Pre-Vista\WindowsXP-KB942288-v3-x86.exe" URL="http://download.microsoft.com/download/2/6/1/261fca42-22c0-4f91-9451-0e0f2e08356d/WindowsXP-KB942288-v3-x86.exe" CheckSum="448447E0BA4560CD558EDDB5F5B0809E" FileSize="0,3327000"></file>
+	</files>
+	<execute file="WindowsXP-KB942288-v3-x86.exe" cmdline="/quiet /norestart" cmdlinesilent="/quiet /norestart" returncodetoreboot="3010,8192,1641"></execute>
+	<properties Id="{22aa129a-8e5d-45ae-a3e4-d110703ef141}" Description="This prerequisite installs the Windows Installer 4.5 engine x86-based systems running Windows XP SP2 or Windows XP SP3." AltPrqURL="http://saturn.installshield.com/is/prerequisites/windows installer 4.5 for windows xp sp2 and later (x86).prq"></properties>
+	<behavior Reboot="2"></behavior>
+</SetupPrereq>

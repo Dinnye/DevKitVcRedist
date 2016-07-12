@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="1" Comparison="1" Path="HKEY_LOCAL_MACHINE\Software\Microsoft\VSTO Runtime Setup\v9.0.21022" FileName="" ReturnValue=""></condition>
+		<condition Type="1" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{50120000-1105-0000-0000-0000000FF1CE}" FileName="" ReturnValue=""></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1" ProductType="1" ServicePackMajorMin="2"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="1" ProductType="2|3"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ProgramFilesFolder&gt;\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\Office2007PIARedist\o2007pia.msi" CheckSum="34DE40C44905A0DD566CD070FD71AFB6" FileSize="0,7160320"></file>
+	</files>
+	<execute file="o2007pia.msi" cmdline="/quiet" cmdlinesilent="/quiet" returncodetoreboot="1641,3010" requiresmsiengine="1"></execute>
+	<dependencies>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .NET Framework 3.5.prq"></dependency>
+	</dependencies>
+	<properties Id="{54EFFB2D-C385-416C-B5CC-F7F2F34914A8}" Description="This prerequisite installs the Microsoft Office 2007 Primary Interop Assemblies. To use this prerequisite, download the PrimaryInteropAssembly.exe file from Microsoft's Web site and run it to extract the o2007pia.msi file. Note that you may need to change the path of the o2007pia.msi installation in the .prq file, depending on where the .msi package is located on your system." AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft office 2007 pia.prq"></properties>
+	<behavior Reboot="2"></behavior>
+</SetupPrereq>

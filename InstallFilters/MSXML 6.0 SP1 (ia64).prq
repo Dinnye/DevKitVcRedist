@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="16" Comparison="2" Path="[SystemFolder]" FileName="msxml6.dll" ReturnValue="6.10.1129.0"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="8" ProductType="2|3"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\MSXML 6.0 SP1\ia64\msxml6_ia64.msi" URL="http://saturn.installshield.com/devstudio/setuprequirements/MSXML60sp1/ia64/msxml6_ia64.msi" CheckSum="1A583E5237BBA91082F86337760912BE" FileSize="0,3755520"></file>
+	</files>
+	<execute file="msxml6_ia64.msi" cmdline="/qn" cmdlinesilent="/qn" requiresmsiengine="1"></execute>
+	<properties Id="{726F97A8-63B9-4A58-ACFB-B8A56B383740}" Description="This prerequisite installs Microsoft Core XML Services (MSXML) 6.0 Service Pack 1 for Itanium systems." AltPrqURL="http://saturn.installshield.com/devstudio/setuprequirements/MSXML60sp1/ia64/MSXML 6.0 SP1 (ia64).prq"></properties>
+	<behavior Hidden="1" Reboot="2"></behavior>
+</SetupPrereq>

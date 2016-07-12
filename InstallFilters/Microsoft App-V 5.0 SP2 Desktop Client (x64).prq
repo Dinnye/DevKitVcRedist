@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SetupPrereq>
+  <conditions>
+    <condition Type="2" Comparison="1" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full" FileName="Install" ReturnValue="1"></condition>
+    <condition Type="2" Comparison="1" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\3" FileName="Install" ReturnValue="1"></condition>
+    <condition Type="1" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{D5783B51-00A6-4991-B6C3-88B35BA45E94}" FileName="" ReturnValue="" Bits="2"></condition>
+  </conditions>
+  <operatingsystemconditions>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="4" ServicePackMajorMin="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="3" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="10" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+  </operatingsystemconditions>
+  <files>
+    <file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\App-V 5.0_sp2\Client\appv_client_setup.exe" CheckSum="B082F422DA82F403389FB71C0E2F6EFB" FileSize="0,70727312"></file>
+  </files>
+  <execute file="appv_client_setup.exe" cmdline="/q /ACCEPTEULA=1 /NORESTART" cmdlinesilent="/q /ACCEPTEULA=1 /NORESTART" returncodetoreboot="3010,8192,1641,1046" requiresmsiengine="1"></execute>
+  <properties Id="{172036B5-320A-4fb3-B116-C5CF7DCF645D}" Description="Use this prerequisite with the App-V 5.0 SP2 (x64) installation, which you must obtain from Microsoft. Before building a release that includes this prerequisite, place the appv_client_setup.exe in the following location: InstallShield Program Files Folder\SetupPrerequisites\App-V 5.0_sp2\Client." AltPrqURL="http://saturn.installshield.com/is/prerequisites/Microsoft App-V 5.0 SP2 Desktop Client (x64).prq"></properties>
+</SetupPrereq>

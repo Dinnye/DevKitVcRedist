@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="2" Comparison="32" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5\1025" FileName="Install" ReturnValue="1"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1" ProductType="1" ServicePackMajorMin="2"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="1" ProductType="2|3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="1" ProductType="2|3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="1" ProductType="1"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .net\3.5\x86\LangPack\Arabic\dotnetfx35langpack_x86ar.exe" URL="http://download.microsoft.com/download/6/f/0/6f0073fb-547c-4ee4-83eb-83620876166a/dotnetfx35langpack_x86ar.exe" CheckSum="6B4FD50ED139B61BE2401CD16B96C844" FileSize="0,10511904"></file>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .net\3.5\Full\Helper.exe" URL="http://saturn.installshield.com/devstudio/setuprequirements/Microsoft .net/3.5/Helper.exe" CheckSum="AD29C3DEC8FB0CFDAFE8548371B0EE6D" FileSize="0,128472"></file>
+	</files>
+	<execute file="Helper.exe" cmdline="/p dotnetfx35langpack_x86ar.exe /v &quot;/q /norestart&quot;" cmdlinesilent="/p dotnetfx35langpack_x86ar.exe /v &quot;/q /norestart&quot;" returncodetoreboot="1641,3010" requiresmsiengine="1"></execute>
+	<dependencies>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .NET Framework 3.5.prq"></dependency>
+	</dependencies>
+	<properties Id="{efbf2387-b943-4357-8f60-cd6feda0a553}" Description="This prerequisite installs the .NET 3.5 framework Arabic language pack for 32-bit (x86) systems." AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft .net framework 3.5 (x86) language pack - arabic.prq"></properties>
+	<behavior Reboot="2"></behavior>
+</SetupPrereq>

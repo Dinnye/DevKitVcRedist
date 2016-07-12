@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="2" Comparison="32" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5\1035" FileName="Install" ReturnValue="1"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4" ProductType="1"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .net\3.5\x64\LangPack\Finnish\dotnetfx35langpack_x64fi.exe" URL="http://download.microsoft.com/download/8/2/d/82dd2edc-bc60-4d53-b228-e23875c7d917/dotnetfx35langpack_x64fi.exe" CheckSum="4389F7D9C0F45E26B408BFAB71753E63" FileSize="0,8634400"></file>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .net\3.5\Full\Helper.exe" URL="http://saturn.installshield.com/devstudio/setuprequirements/Microsoft .net/3.5/Helper.exe" CheckSum="AD29C3DEC8FB0CFDAFE8548371B0EE6D" FileSize="0,128472"></file>
+	</files>
+	<execute file="Helper.exe" cmdline="/p dotnetfx35langpack_x64fi.exe /v &quot;/q /norestart&quot;" cmdlinesilent="/p dotnetfx35langpack_x64fi.exe /v &quot;/q /norestart&quot;" returncodetoreboot="1641,3010" requiresmsiengine="1"></execute>
+	<dependencies>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .NET Framework 3.5.prq"></dependency>
+	</dependencies>
+	<properties Id="{7408545c-9810-4390-89e2-482c64bfa02e}" Description="This prerequisite installs the .NET 3.5 framework Finnish language pack for 64-bit (x64) systems." AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft .net framework 3.5 (x64) language pack - finnish.prq"></properties>
+	<behavior Reboot="2"></behavior>
+</SetupPrereq>

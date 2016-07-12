@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SetupPrereq>
+  <conditions>
+    <condition Type="32" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{196BB40D-1578-3D01-B289-BEFC77A11A1E}" FileName="DisplayVersion" ReturnValue="10.0.30319"></condition>
+  </conditions>
+  <operatingsystemconditions>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" ProductType="2|3"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" ProductType="2|3"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" ProductType="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1" ProductType="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="2" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="2" ProductType="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="3" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="10" MinorVersion="0" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+  </operatingsystemconditions>
+  <files>
+    <file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\VC 2010 MFC Update\x86\vcredist_x86.exe" URL="http://download.microsoft.com/download/4/D/0/4D00D6C0-09FC-446C-AE9C-C923AF2DF29A/vcredist_x86.exe" CheckSum="8A405667AEBC011B3FC434744A5B536F" FileSize="0,9034584"></file>
+  </files>
+  <execute file="vcredist_x86.exe" cmdline="/q" cmdlinesilent="/q" returncodetoreboot="1641,3010" requiresmsiengine="1"></execute>
+  <dependencies>
+    <dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Windows Installer 3.1 for Windows Server 2003 SP1 (x86).prq"></dependency>
+    <dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Windows Installer 3.1 (x86).prq"></dependency>
+  </dependencies>
+  <properties Id="{BBE79BC0-3157-4D20-829E-E8799A694C51}" Description="This prerequisite installs Microsoft Visual C++ 2010 RTM Redistributable MFC Security Update on x86 systems." AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2010 rtm redistributable mfc security update kb2467173 (x86).prq"></properties>
+  <behavior Reboot="2"></behavior>
+</SetupPrereq>

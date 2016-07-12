@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SetupPrereq>
+  <conditions>
+    <condition Type="1" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\EFEE0228DC83E77358593193D847A0EC" FileName="" ReturnValue="" Bits="2"></condition>
+  </conditions>
+  <operatingsystemconditions>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="3" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="10" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+  </operatingsystemconditions>
+  <files>
+    <file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\VC 2008 SP1 Redist\vcredist_x64.exe" URL="http://download.microsoft.com/download/2/d/6/2d61c766-107b-409d-8fba-c39e61ca08e8/vcredist_x64.exe" CheckSum="40395C175553CB14D2050888EFCCDF00" FileSize="0,4961800"></file>
+  </files>
+  <execute file="vcredist_x64.exe" cmdline="/q" cmdlinesilent="/q" returncodetoreboot="3010,8192,1641,1046" requiresmsiengine="1"></execute>
+  <properties Id="{8D61397C-2AD6-4210-8E43-C2793010DC35}" Description="This prerequisite installs the Microsoft Visual C++ 2008 SP1 Redistributable Package for x64-based systems." AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2008 sp1 redistributable package (x64).prq"></properties>
+  <behavior Reboot="2"></behavior>
+</SetupPrereq>

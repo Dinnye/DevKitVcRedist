@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="1" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{196BB40D-1578-3D01-B289-BEFC77A11A1E}" FileName="" ReturnValue=""></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1" ProductType="1" ServicePackMajorMin="2"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" ProductType="2|3" ServicePackMajorMin="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" ProductType="2|3" ServicePackMajorMin="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="2" ProductType="1"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\VC 2010 Redist\x86\vcredist_x86.exe" URL="http://download.microsoft.com/download/5/B/C/5BC5DBB3-652D-4DCE-B14A-475AB85EEF6E/vcredist_x86.exe" CheckSum="B88228D5FEF4B6DC019D69D4471F23EC" FileSize="0,5073240"></file>
+	</files>
+	<execute file="vcredist_x86.exe" cmdline="/q" cmdlinesilent="/q" returncodetoreboot="1641,3010"></execute>
+	<dependencies>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Windows Installer 3.1 (x86).prq"></dependency>
+	</dependencies>
+	<properties Id="{83960519-644A-4722-BA7A-37D23C1D004F}" Description="This prerequisite installs the Microsoft Visual C++ 2010 Runtime Libraries (x86)." AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2010 redistributable package (x86).prq"></properties>
+	<behavior Reboot="2"></behavior>
+</SetupPrereq>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="2" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5" FileName="SP" ReturnValue="1"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1" ProductType="1" ServicePackMajorMin="2"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" ProductType="2|3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="2" ProductType="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" ProductType="2|3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" ProductType="1"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .net\3.5 SP1\Full\dotnetfx35.exe" URL="http://download.microsoft.com/download/2/0/e/20e90413-712f-438c-988e-fdaa79a8ac3d/dotnetfx35.exe" CheckSum="D481CDA2625D9DD2731A00F482484D86" FileSize="0,242743296"></file>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .net\3.5 SP1\Full\Helper.exe" URL="http://saturn.installshield.com/devstudio/setuprequirements/Microsoft .net/3.5/Helper.exe" CheckSum="AD29C3DEC8FB0CFDAFE8548371B0EE6D" FileSize="0,128472"></file>
+	</files>
+	<execute file="Helper.exe" cmdline="/p dotnetfx35.exe /l 1033 /v &quot;/q /norestart&quot;" cmdlinesilent="/p dotnetfx35.exe /l 1033 /v &quot;/q /norestart&quot;" returncodetoreboot="1641,3010" requiresmsiengine="1"></execute>
+	<properties Id="{074EE22F-2485-4FED-83D1-AAC36C3D9ED0}" Description="This prerequisite installs the .NET Framework 3.5 Service Pack 1 full package." AltPrqURL="http://saturn.installshield.com/is/prerequisites/dotnet/microsoft .net framework 3.5 sp1.prq"></properties>
+	<behavior Reboot="2"></behavior>
+</SetupPrereq>

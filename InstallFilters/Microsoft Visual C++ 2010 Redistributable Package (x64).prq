@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="1" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{DA5E371C-6333-3D8A-93A4-6FD5B20BCC6E}" FileName="" ReturnValue="" Bits="2"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="1" ServicePackMajorMin="3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4" ServicePackMajorMin="2"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\VC 2010 Redist\x64\vcredist_x64.exe" URL="http://download.microsoft.com/download/3/2/2/3224B87F-CFA0-4E70-BDA3-3DE650EFEBA5/vcredist_x64.exe" CheckSum="630D75210B325A280C3352F879297ED5" FileSize="0,5718872"></file>
+	</files>
+	<execute file="vcredist_x64.exe" cmdline="/q" cmdlinesilent="/q" returncodetoreboot="1641,3010"></execute>
+	<properties Id="{8A102FA5-9E73-477b-8937-2ED4C06AF304}" Description="This prerequisite installs the Microsoft Visual C++ 2010 Runtime Libraries (x64)." AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2010 redistributable package (x64).prq"></properties>
+	<behavior Reboot="2"></behavior>
+</SetupPrereq>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="32" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\SQLEXPRESS\MSSQLServer\CurrentVersion" FileName="CurrentVersion" ReturnValue="9.00.3042.00"></condition>
+	</conditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\Objects\SQL2005ExpressSP2\SQLEXPR32.EXE" URL="http://saturn.installshield.com/devstudio/setuprequirements/sqlexpress/sp2/SQLEXPR32.EXE" CheckSum="CC50972311E47C2166B3FEEC0675211F" FileSize="0,38220656"></file>
+	</files>
+	<execute file="SQLEXPR32.EXE" requiresmsiengine="1"></execute>
+	<dependencies>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Windows Installer 3.1 (x86).prq"></dependency>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Windows Installer 3.1 for Windows Server 2003 SP1 (x86).prq"></dependency>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .NET Framework 2.0 SP2.prq"></dependency>
+	</dependencies>
+	<properties Id="Microsoft SQL Server 2005 Express SP2" Description="This installs Microsoft SQL Server 2005 Express Edition SP2 (SQL Server Express). The /qn switch suppresses all Setup dialog boxes and error messages. See http://msdn2.microsoft.com/en-us/library/ms144259.aspx for more information about the commad line options." AltPrqURL="http://saturn.installshield.com/devstudio/setuprequirements/sqlexpress/sp2/121208/microsoft sql server 2005 express sp2.prq"></properties>
+</SetupPrereq>

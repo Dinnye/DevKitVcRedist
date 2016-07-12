@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="16" Comparison="2" Path="[SystemFolder]" FileName="windowscodecs.dll" ReturnValue="6.0.5840.16388"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="1" ProductType="2|3" ServicePackMajorMin="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1" ProductType="1" ServicePackMajorMin="2"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\WindowsImagingComponent\x86\wic_x86_enu.exe" URL="http://download.microsoft.com/download/f/f/1/ff178bb1-da91-48ed-89e5-478a99387d4f/wic_x86_enu.exe" CheckSum="53F5CCBE5FE06C3B40CC9E34AC909DF7" FileSize="0,1227048"></file>
+	</files>
+	<execute file="wic_x86_enu.exe" cmdline="/quiet /norestart" cmdlinesilent="/quiet /norestart" returncodetoreboot="1641,3010"></execute>
+	<properties Id="{2A0CC195-B3AF-4B63-8F5C-1F88A7E28ADF}" Description="This prerequisite installs the Windows Imaging Component for 32-bit (x86) systems." AltPrqURL="http://saturn.installshield.com/is/prerequisites/windows imaging component (x86).prq"></properties>
+	<behavior Reboot="2"></behavior>
+</SetupPrereq>

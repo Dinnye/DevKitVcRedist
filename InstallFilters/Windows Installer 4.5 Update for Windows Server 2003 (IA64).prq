@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="16" Comparison="1" Path="[SystemFolder]" FileName="msi.dll" ReturnValue="4.5.6001.22159"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="8" ProductType="2|3" ServicePackMajorMin="1"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Windows Installer\4.5\ia64\Pre-Vista\WindowsServer2003-KB958655-v2-ia64-ENU.exe" URL="http://download.microsoft.com/download/0/F/B/0FB7310C-0159-420D-BF14-C8EADF422469/WindowsServer2003-KB958655-v2-ia64-ENU.exe" CheckSum="E33A5D250B53D3C04054A66761F0A182" FileSize="0,4149624"></file>
+	</files>
+	<execute file="WindowsServer2003-KB958655-v2-ia64-ENU.exe" cmdline="/quiet /norestart" cmdlinesilent="/quiet /norestart" returncodetoreboot="3010,8192,1641" requiresmsiengine="1"></execute>
+	<properties Id="{679BCAE0-0A16-4D1B-BFFB-9B1E13C7AD31}" Description="This prerequisite installs the Windows Installer 4.5 engine update on Itanium-based systems running Windows Server 2003 SP1 or Windows Server 2003 SP2. The engine update includes the fix detailed in Microsoft KB958655. Windows Installer 4.5 must already be installed on the target machine for this update to install successfully." AltPrqURL="http://saturn.installshield.com/is/prerequisites/windows installer 4.5 update for windows server 2003 (ia64).prq"></properties>
+	<behavior Reboot="32"></behavior>
+</SetupPrereq>

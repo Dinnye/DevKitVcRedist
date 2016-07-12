@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="16" Comparison="2" Path="[SystemFolder]" FileName="msxml6.dll" ReturnValue="6.10.1129.0"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="1"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\MSXML 6.0 SP1\x64\msxml6_x64.msi" URL="http://saturn.installshield.com/devstudio/setuprequirements/MSXML60sp1/x64/msxml6_x64.msi" CheckSum="13C28B2FE578808A66C975B3C4F9082F" FileSize="0,2664960"></file>
+	</files>
+	<execute file="msxml6_x64.msi" cmdline="/qn" cmdlinesilent="/qn" requiresmsiengine="1"></execute>
+	<properties Id="{726F97A8-63B9-4A58-ACFB-B8A56B383740}" Description="This prerequisite installs Microsoft Core XML Services (MSXML) 6.0 Service Pack 1 for  x64 systems." AltPrqURL="http://saturn.installshield.com/devstudio/setuprequirements/MSXML60sp1/x64/MSXML 6.0 SP1 (x64).prq"></properties>
+	<behavior Hidden="1" Reboot="2"></behavior>
+</SetupPrereq>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SetupPrereq>
+  <conditions>
+    <condition Type="32" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\SQLEXPRESS\MSSQLServer\CurrentVersion" FileName="CurrentVersion" ReturnValue="9.00.4035.00"></condition>
+  </conditions>
+  <operatingsystemconditions>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="0" PlatformId="2" CSDVersion="" ServicePackMajorMin="4"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1" ProductType="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="1" ProductType="2|3"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1" ProductType="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="3" PlatformId="2" CSDVersion="" Bits="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="10" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="1"></operatingsystemcondition>
+  </operatingsystemconditions>
+  <files>
+    <file LocalFile="&lt;ISProductFolder&gt;\Objects\SQL2005ExpressSP3\SQLEXPR32.EXE" URL="http://download.microsoft.com/download/6/C/7/6C7458CA-8B07-411E-9E3B-0DED20512696/SQLEXPR32.EXE" CheckSum="F281780917D1B0F0932C898924A9EAFF" FileSize="0,37646688"></file>
+  </files>
+  <execute file="SQLEXPR32.EXE" cmdlinesilent="/qn" requiresmsiengine="1"></execute>
+  <dependencies>
+    <dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Windows Installer 3.1 (x86).prq"></dependency>
+    <dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Windows Installer 3.1 for Windows Server 2003 SP1 (x86).prq"></dependency>
+    <dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .NET Framework 2.0 SP2.prq"></dependency>
+  </dependencies>
+  <properties Id="Microsoft SQL Server 2005 Express SP3 (x86)" Description="This installs Microsoft SQL Server 2005 Express Edition SP3 (SQL Server Express) onto 32-bit operating systems only. The /qn switch suppresses all Setup dialog boxes and error messages. See http://msdn2.microsoft.com/en-us/library/ms144259.aspx for more information about the commad line options." AltPrqURL="http://saturn.installshield.com/devstudio/setuprequirements/sqlexpress/050610/microsoft sql server 2005 express sp3 (x86).prq"></properties>
+</SetupPrereq>

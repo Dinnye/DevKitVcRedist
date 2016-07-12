@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SetupPrereq>
+  <conditions>
+    <condition Type="1" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{A2CB1ACB-94A2-32BA-A15E-7D80319F7589}" FileName="" ReturnValue="" Bits="2"></condition>
+  </conditions>
+  <operatingsystemconditions>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4" ServicePackMajorMin="2"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="4" ServicePackMajorMin="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="3" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="10" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+  </operatingsystemconditions>
+  <files>
+    <file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\VC 2012 Redist\x64\vcredist_x64.exe" URL="http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/vcredist_x64.exe" CheckSum="CCAE0434AC161E2FF081A13985C801FD" FileSize="0,7157496"></file>
+  </files>
+  <execute file="vcredist_x64.exe" cmdline="/q" cmdlinesilent="/q" returncodetoreboot="1641,3010"></execute>
+  <properties Id="{8G66a156-bc3b-579d-9703-65db354235dd}" Description="This prerequisite installs the Microsoft Visual C++ 2012 Runtime Libraries (x64)." AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2012 redistributable package (x64).prq"></properties>
+  <behavior Reboot="2"></behavior>
+</SetupPrereq>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SetupPrereq>
+  <conditions>
+    <condition Type="1" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{1D8E6291-B0D5-35EC-8441-6616F567A0F7}" FileName="" ReturnValue="" Bits="2"></condition>
+  </conditions>
+  <operatingsystemconditions>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4" ServicePackMajorMin="2"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="3" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="10" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+  </operatingsystemconditions>
+  <files>
+    <file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\VC 2010 SP1 Redist\x64\vcredist_x64.exe" URL="http://download.microsoft.com/download/A/8/0/A80747C3-41BD-45DF-B505-E9710D2744E0/vcredist_x64.exe" CheckSum="CBE0B05C11D5D523C2AF997D737C137B" FileSize="0,5673816"></file>
+  </files>
+  <execute file="vcredist_x64.exe" cmdline="/q" cmdlinesilent="/q" returncodetoreboot="1641,3010"></execute>
+  <dependencies>
+    <dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Windows Installer 3.1 for Windows Server 2003 SP1 (x64).prq"></dependency>
+    <dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Windows Installer 3.1 for Windows XP (x64).prq"></dependency>
+  </dependencies>
+  <properties Id="{7f66a156-bc3b-479d-9703-65db354235cc}" Description="This prerequisite installs the Microsoft Visual C++ 2010 Service Pack 1 Runtime Libraries (x64)." AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2010 sp1 redistributable package (x64).prq"></properties>
+  <behavior Reboot="2"></behavior>
+</SetupPrereq>

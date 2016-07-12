@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SetupPrereq>
+  <conditions>
+    <condition Type="2" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5" FileName="SP" ReturnValue="1"></condition>
+  </conditions>
+  <operatingsystemconditions>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="2" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="3" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="10" MinorVersion="0" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+  </operatingsystemconditions>
+  <files>
+    <file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .net\3.5 SP1\Dism\Helper.exe" URL="http://saturn.installshield.com/devstudio/setuprequirements/Microsoft .net/3.5/dism/Helper.exe" CheckSum="13C2BAE772EA8C5E4298FBBA747D79B9" FileSize="0,169912"></file>
+  </files>
+  <execute file="Helper.exe" cmdlinesilent="/s" returncodetoreboot="1641,3010" requiresmsiengine="1"></execute>
+  <properties Id="{D3C742E6-45DB-4895-9A20-707C33C582E8}" Description="This prerequisite enables the .NET Framework 3.5 Service Pack 1 Windows feature on Windows 7, Windows Server 2008 R2, Windows 8, and Windows Server 2012 target systems." AltPrqURL="http://saturn.installshield.com/is/prerequisites/dotnet/microsoft .net framework 3.5 sp1 (windows feature).prq"></properties>
+  <behavior Reboot="2"></behavior>
+</SetupPrereq>

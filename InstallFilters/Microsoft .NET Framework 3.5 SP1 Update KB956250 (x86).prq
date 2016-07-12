@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="16" Comparison="2" Path="[SystemFolder]" FileName="Mscoree.dll" ReturnValue="4.0.31106.0"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="1"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .net\3.5 SP1\KB956250\Windows6.0-KB956250-x86.MSU" URL="http://download.microsoft.com/download/C/E/9/CE91C169-CC99-4152-9589-A2D6EC7CA54C/Windows6.0-KB956250-x86.MSU" CheckSum="379BAA7FA3EA8A6BBADBD24AF58FFE7C" FileSize="0,850644"></file>
+	</files>
+	<execute file="Windows6.0-KB956250-x86.MSU" cmdlinesilent="/quiet" returncodetoreboot="1641,3010" requiresmsiengine="1"></execute>
+	<properties Id="{E68C30A5-5468-4093-A08A-61483C2EE110}" Description="This prerequisite installs the Microsoft .NET Framework 3.5 SP1 Update for Windows Vista and Windows Server 2008. http://support.microsoft.com/kb/956250 for details about the update." AltPrqURL="http://saturn.installshield.com/is/prerequisites/Microsoft .NET Framework 3.5 SP1 Update KB956250 (x86).prq"></properties>
+	<behavior Reboot="2"></behavior>
+</SetupPrereq>

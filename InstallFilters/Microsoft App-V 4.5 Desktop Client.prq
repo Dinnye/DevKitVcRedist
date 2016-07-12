@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="32" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SoftGrid\4.5\Client\Configuration" FileName="Version" ReturnValue="4.5.0.1485"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1" ProductType="1" ServicePackMajorMin="2"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\App-V 4.5\Client\setup.msi" CheckSum="5598423B33BCC9B09B4426EF2F370D8E" FileSize="0,15977984"></file>
+	</files>
+	<execute file="setup.msi" cmdline="/qn REBOOT=ReallySuppress" cmdlinesilent="/qn REBOOT=ReallySuppress" returncodetoreboot="3010,8192,1641,1046" requiresmsiengine="1"></execute>
+	<dependencies>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft Application Error Reporting.prq"></dependency>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft Visual C++ 2005 SP1 Redistributable Package (x86).prq"></dependency>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\MSXML 6.0 SP1.prq"></dependency>
+	</dependencies>
+	<properties Id="{CC3A922B-2EE7-4DB9-BB77-2E36577C79C9}" Description="Use this prerequisite with the App-V 4.5 installation (setup.msi), which you must obtain from Microsoft. Before building a release that includes this prerequisite, place the setup.msi file in the following location: InstallShield Program Files Folder\SetupPrerequisites\App-V 4.5\Client" AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft app-v 4.5 desktop client.prq"></properties>
+	<behavior Reboot="8"></behavior>
+</SetupPrereq>

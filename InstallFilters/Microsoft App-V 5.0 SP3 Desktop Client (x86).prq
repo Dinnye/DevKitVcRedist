@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SetupPrereq>
+  <conditions>
+    <condition Type="2" Comparison="1" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full" FileName="Release" ReturnValue="378675"></condition>
+    <condition Type="2" Comparison="1" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\3" FileName="Install" ReturnValue="1"></condition>
+    <condition Type="1" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{F951C97F-217E-45AC-A827-DDC467AC53C2}" FileName="" ReturnValue=""></condition>
+  </conditions>
+  <operatingsystemconditions>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="1" ProductType="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1" ProductType="1" ServicePackMajorMin="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="1" ProductType="2|3" ServicePackMajorMin="2"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="3" PlatformId="2" CSDVersion="" Bits="1" ProductType="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="10" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="1" ProductType="1"></operatingsystemcondition>
+  </operatingsystemconditions>
+  <files>
+    <file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\App-V 5.0_sp3\Client\appv_client_setup.exe" CheckSum="DF5734E75B1BC68FF1BBAF8DCF115CFA" FileSize="0,50933056"></file>
+  </files>
+  <execute file="appv_client_setup.exe" cmdline="/q /ACCEPTEULA=1 /NORESTART" cmdlinesilent="/q /ACCEPTEULA=1 /NORESTART" returncodetoreboot="3010,8192,1641,1046" requiresmsiengine="1"></execute>
+  <properties Id="{AA7E9841-5293-4523-BA14-A2B6823735BC}" Description="Use this prerequisite with the App-V 5.0 SP3 installation, which you must obtain from Microsoft. Before building a release that includes this prerequisite, place the appv_client_setup.exe in the following location: InstallShield Program Files Folder\SetupPrerequisites\App-V 5.0_sp3\Client." AltPrqURL="http://saturn.installshield.com/is/prerequisites/Microsoft App-V 5.0 SP3 Desktop Client (x86).prq"></properties>
+</SetupPrereq>

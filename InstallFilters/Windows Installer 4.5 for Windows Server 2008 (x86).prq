@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="16" Comparison="2" Path="[SystemFolder]" FileName="msi.dll" ReturnValue="4.5.6001.22303"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="1" ProductType="2|3"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Windows Installer\4.5\x86\Server2008\Windows6.0-KB958655-v2-x86.msu" URL="http://download.microsoft.com/download/F/4/D/F4D4B51C-83BA-47DC-8EB1-12F756E1C808/Windows6.0-KB958655-v2-x86.msu" CheckSum="F6103DB29F1759D3BD49D01C060C5B8D" FileSize="0,1960465"></file>
+	</files>
+	<execute file="Windows6.0-KB958655-v2-x86.msu" cmdline="/quiet /norestart" cmdlinesilent="/quiet /norestart" returncodetoreboot="3010,8192,1641" requiresmsiengine="1"></execute>
+	<properties Id="{E60EDE84-627E-4094-8BC2-6C732E7E73D3}" Description="This prerequisite installs the Windows Installer 4.5 engine on x86-based systems running Windows Server 2008. The engine includes the fix detailed in Microsoft KB958655." AltPrqURL="http://saturn.installshield.com/is/prerequisites/windows installer 4.5 for windows server 2008 (x86).prq"></properties>
+	<behavior Reboot="2"></behavior>
+</SetupPrereq>

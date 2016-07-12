@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SetupPrereq>
+  <conditions>
+    <condition Type="1" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{ad8a2fa1-06e7-4b0d-927d-6e54b3d31028}" FileName="" ReturnValue="" Bits="2"></condition>
+  </conditions>
+  <operatingsystemconditions>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="2" ProductType="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4" ProductType="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="3" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="10" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+  </operatingsystemconditions>
+  <files>
+    <file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\VC 2005 MFC Update\x64\vcredist_x64.EXE" URL="http://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x64.EXE" CheckSum="56EAF4E1237C974F6984EDC93972C123" FileSize="0,3175832"></file>
+  </files>
+  <execute file="vcredist_x64.EXE" cmdline="/q:a /c:&quot;msiexec /i vcredist.msi /qn&quot;" cmdlinesilent="/q:a /c:&quot;msiexec /i vcredist.msi /qn&quot;" returncodetoreboot="3010,8192,1641,1046"></execute>
+  <properties Id="{C8141D5A-EE7B-45E8-AFE3-2799B9E99440}" Description="This prerequisite installs Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package MFC Security Update on x64 systems." AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2005 sp1 redistributable mfc security update kb2538242(x64).prq"></properties>
+  <behavior Reboot="2"></behavior>
+</SetupPrereq>

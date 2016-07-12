@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="32" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SoftGrid\4.5\Client\Configuration" FileName="Version" ReturnValue="4.6.1.20870" Bits="2"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="1" ServicePackMajorMin="2"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="4" ProductType="1"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\App-V 4.6_sp1\Client\x64\setup.msi" FileSize="0,0"></file>
+	</files>
+	<execute file="setup.msi" cmdline="/qn REBOOT=ReallySuppress" cmdlinesilent="/qn REBOOT=ReallySuppress" returncodetoreboot="3010,8192,1641,1046" requiresmsiengine="1"></execute>
+	<dependencies>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft Application Error Reporting.prq"></dependency>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft Visual C++ 2005 SP1 Redistributable Package (x64).prq"></dependency>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\MSXML 6.0 SP1 (x64).prq"></dependency>
+	</dependencies>
+	<properties Id="{CD3A922B-2FF7-4DB9-BB88-2E36577C79C9}" Description="Use this prerequisite with the App-V 4.6 SP1 installation (setup.msi), which you must obtain from Microsoft. Before building a release that includes this prerequisite, place the setup.msi file in the following location: InstallShield Program Files Folder\SetupPrerequisites\App-V 4.6_sp1\Client\x64" AltPrqURL="http://saturn.installshield.com/is/prerequisites/Microsoft App-V 4.6 SP1 Desktop Client (x64).prq"></properties>
+	<behavior Reboot="8"></behavior>
+</SetupPrereq>

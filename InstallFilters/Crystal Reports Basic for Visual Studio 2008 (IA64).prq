@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="1" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{CE26F10F-C80F-4377-908B-1B7882AE2CE3}" FileName="" ReturnValue=""></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="8" ProductType="2|3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="8" ProductType="2|3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="8" ProductType="1"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="C:\Program Files\Microsoft Visual Studio 9.0\Crystal Reports\CRRedist\IA64\CRRedist2008_ia64.msi" CheckSum="310A3A6A2FBD920B9F53056223A8E897" FileSize="0,48147456"></file>
+	</files>
+	<execute file="CRRedist2008_ia64.msi" cmdline="/qn /norestart" cmdlinesilent="/qn /norestart" returncodetoreboot="1641,3010" requiresmsiengine="1"></execute>
+	<properties Id="{ef14b8ef-2824-4cdd-8974-0a4ecb72ef18}" Description="This prerequisite installs the Crystal Reports Basic Runtime for Visual Studio 2008 for IA64-based systems, which you must obtain from Crystal Reports. Before building a release that includes this prerequisite, place the CRRedist2008_ia64.msi file in the following location: C:\Program Files\Microsoft Visual Studio 9.0\Crystal Reports\CRRedist\IA64\." AltPrqURL="http://saturn.installshield.com/is/prerequisites/crystal reports basic for visual studio 2008 (ia64).prq"></properties>
+	<behavior Reboot="32"></behavior>
+</SetupPrereq>

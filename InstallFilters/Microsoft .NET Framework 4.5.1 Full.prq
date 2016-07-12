@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="2" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full" FileName="Release" ReturnValue="378675"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" ProductType="2|3" ServicePackMajorMin="2"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" ServicePackMajorMin="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="2" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" ProductType="1" ServicePackMajorMin="2"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .net\4.5\Full\NDP451-KB2858728-x86-x64-AllOS-ENU.exe" URL="http://download.microsoft.com/download/1/6/7/167F0D79-9317-48AE-AEDB-17120579F8E2/NDP451-KB2858728-x86-x64-AllOS-ENU.exe" CheckSum="607D3C9B399E3D303A1B14EB4326BD1E" FileSize="0,70087104"></file>
+	</files>
+	<execute file="NDP451-KB2858728-x86-x64-AllOS-ENU.exe" cmdline="/showrmui /passive " cmdlinesilent="/q /norestart" returncodetoreboot="1641,3010" requiresmsiengine="1"></execute>
+	<properties Id="{439BD42A-2F5B-44c8-9FF2-BEB31BC34E63}" Description="This prerequisite installs the .NET Framework 4.5.1 full standalone package." AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft .net framework 4.5.1 full.prq"></properties>
+	<behavior Reboot="2"></behavior>
+</SetupPrereq>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SetupPrereq>
+  <conditions>
+    <condition Type="1" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{9BE518E6-ECC6-35A9-88E4-87755C07200F}" FileName="" ReturnValue=""></condition>
+  </conditions>
+  <operatingsystemconditions>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" ProductType="2|3"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="2" ProductType="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1" ProductType="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="2" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="3" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="10" MinorVersion="0" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+  </operatingsystemconditions>
+  <files>
+    <file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\VC 2008 MFC Update\x86\vcredist_x86.exe" URL="http://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x86.exe" CheckSum="35DA2BF2BEFD998980A495B6F4F55E60" FileSize="0,4479832"></file>
+  </files>
+  <execute file="vcredist_x86.exe" cmdline="/q" cmdlinesilent="/q" returncodetoreboot="3010,8192,1641,1046"></execute>
+  <properties Id="{22B20B17-D6FD-4E7B-9E0E-50E8D3B4B9EA}" Description="This prerequisite installs Microsoft Visual C++ 2008 Service Pack 1 Redistributable Package MFC Security Update on x86 systems." AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2008 sp1 redistributable mfc security update kb2538243(x86).prq"></properties>
+  <behavior Reboot="2"></behavior>
+</SetupPrereq>

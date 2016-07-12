@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="1" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Identity Foundation\Setup\v3.5" FileName="" ReturnValue=""></condition>
+		<condition Type="32" Comparison="1" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full" FileName="Version" ReturnValue="4.0.30319"></condition>
+		<condition Type="32" Comparison="1" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\InetStp" FileName="VersionString" ReturnValue="Version 6.0"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3" ServicePackMajorMin="2"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile=".\Windows Identity Foundation\Windows5.2\x64\Windows5.2-KB974405-x64.exe" URL="http://download.microsoft.com/download/7/3/8/73827AA6-0298-49E5-8474-48CBD9C01F24/Windows5.2-KB974405-x64.exe" CheckSum="01C7C615B7B7E5B655FF7A6D4A3A8F1A" FileSize="0,1304872"></file>
+	</files>
+	<execute file="Windows5.2-KB974405-x64.exe" cmdline="/quiet" cmdlinesilent="/quiet" returncodetoreboot="3010" requiresmsiengine="1"></execute>
+	<dependencies>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .NET Framework 4.0 Full.prq"></dependency>
+	</dependencies>
+	<properties Id="{3B827E50-6DB0-4207-B82B-ADC39EB6668F}" Description="This prerequisite installs Windows Identity Foundation for Windows 2003(x64) system." AltPrqURL="http://saturn.installshield.com/is/prerequisites/windows identity foundation for windows 2003(x64).prq"></properties>
+	<behavior Reboot="2"></behavior>
+</SetupPrereq>

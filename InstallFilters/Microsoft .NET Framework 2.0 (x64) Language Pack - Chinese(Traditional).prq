@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="2" Comparison="32" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v2.0.50727\1028" FileName="Install" ReturnValue="1"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .net\2.0\x64\LangPack\Chinese(Traditional)\langpack.exe" URL="http://www.microsoft.com/downloads/info.aspx?na=90&amp;p=&amp;SrcDisplayLang=zh-tw&amp;SrcCategoryId=&amp;SrcFamilyId=92E0E1CE-8693-4480-84FA-7D85EEF59016&amp;u=http%3a%2f%2fdownload.microsoft.com%2fdownload%2fe%2fe%2f0%2fee042804-ca09-4e0a-9d82-efd83fd73a79%2flangpack.exe" CheckSum="A4A2B18302158C3815D9F3BCFB13AD62" FileSize="0,2897088"></file>
+	</files>
+	<execute file="langpack.exe" cmdline="/q:a /c:&quot;install /l /q&quot;" cmdlinesilent="/q:a /c:&quot;install /l /q&quot;" returncodetoreboot="3010, 8192" requiresmsiengine="1"></execute>
+	<dependencies>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .NET Framework 2.0 (x64).prq"></dependency>
+	</dependencies>
+	<properties Id="{F0BE3DE6-344F-42e8-BC35-65AFF48B3335}" Description="This prerequisite installs the Chinese(Traditional) .net 2.0 language pack for x64 systems." AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft .net framework 2.0 (x64) language pack - chinese(traditional).prq"></properties>
+</SetupPrereq>

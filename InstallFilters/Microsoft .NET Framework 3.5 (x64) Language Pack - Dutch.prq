@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="2" Comparison="32" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5\1043" FileName="Install" ReturnValue="1"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4" ProductType="1"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .net\3.5\x64\LangPack\Dutch\dotnetfx35langpack_x64nl.exe" URL="http://download.microsoft.com/download/0/6/4/0641dc3b-df36-4569-b5a4-a8baef4bfe70/dotnetfx35langpack_x64nl.exe" CheckSum="2EDD7C2485267DB3CEECA3FDEA937E25" FileSize="0,8679456"></file>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .net\3.5\Full\Helper.exe" URL="http://saturn.installshield.com/devstudio/setuprequirements/Microsoft .net/3.5/Helper.exe" CheckSum="AD29C3DEC8FB0CFDAFE8548371B0EE6D" FileSize="0,128472"></file>
+	</files>
+	<execute file="Helper.exe" cmdline="/p dotnetfx35langpack_x64nl.exe /v &quot;/q /norestart&quot;" cmdlinesilent="/p dotnetfx35langpack_x64nl.exe /v &quot;/q /norestart&quot;" returncodetoreboot="1641,3010" requiresmsiengine="1"></execute>
+	<dependencies>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .NET Framework 3.5.prq"></dependency>
+	</dependencies>
+	<properties Id="{5e3b200f-9322-44d8-bd3e-cf96c38c4b65}" Description="This prerequisite installs the .NET 3.5 framework Dutch language pack for 64-bit (x64) systems." AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft .net framework 3.5 (x64) language pack - dutch.prq"></properties>
+	<behavior Reboot="2"></behavior>
+</SetupPrereq>

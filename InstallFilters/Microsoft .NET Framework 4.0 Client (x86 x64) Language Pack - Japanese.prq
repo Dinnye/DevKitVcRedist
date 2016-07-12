@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="2" Comparison="32" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client\1041" FileName="Install" ReturnValue="1"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1" ProductType="1" ServicePackMajorMin="3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="1" ProductType="2|3" ServicePackMajorMin="2"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="1" ServicePackMajorMin="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="1" ProductType="2|3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="1" ProductType="1" ServicePackMajorMin="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3" ServicePackMajorMin="2"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4" ServicePackMajorMin="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4" ProductType="1" ServicePackMajorMin="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="4" ProductType="1"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .net\4.0\LangPack\Japanese\dotNetFx40LP_Client_x86_x64ja.exe" URL="http://download.microsoft.com/download/B/6/3/B6314289-23C1-4FB2-80A2-8B114A582841/dotNetFx40LP_Client_x86_x64ja.exe" CheckSum="AB3711A9B2E0E39AC326F48123024536" FileSize="0,3395360"></file>
+	</files>
+	<execute file="dotNetFx40LP_Client_x86_x64ja.exe" cmdline="/q /norestart" cmdlinesilent="/q /norestart" returncodetoreboot="1641,3010,1614" requiresmsiengine="1"></execute>
+	<dependencies>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Windows Imaging Component (x86).prq"></dependency>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Windows Imaging Component (x64).prq"></dependency>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .NET Framework 4.0 Client.prq"></dependency>
+	</dependencies>
+	<properties Id="{65d76e18-cf56-4021-9ac2-e70061b2efe5}" Description="This prerequisite installs the .NET 4.0 framework client Japanese language pack for 32-bit (x86) and 64-bit (x64) systems." AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft .net framework 4.0 client (x86 x64) language pack - japanese.prq"></properties>
+	<behavior Reboot="2"></behavior>
+</SetupPrereq>

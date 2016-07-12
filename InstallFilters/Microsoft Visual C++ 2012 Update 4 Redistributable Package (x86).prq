@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SetupPrereq>
+  <conditions>
+    <condition Type="32" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\VC\Servicing\11.0\RuntimeMinimum" FileName="Version" ReturnValue="11.0.61030"></condition>
+  </conditions>
+  <operatingsystemconditions>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" ServicePackMajorMin="2"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" ServicePackMajorMin="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="2" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="3" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1" ProductType="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="10" MinorVersion="0" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+  </operatingsystemconditions>
+  <files>
+    <file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\VC 2012 Redist\Update4\x86\vcredist_x86.exe" URL="http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x86.exe" CheckSum="7F52A19ECAF7DB3C163DD164BE3E592E" FileSize="0,6554576"></file>
+  </files>
+  <execute file="vcredist_x86.exe" cmdline="/q" cmdlinesilent="/q" returncodetoreboot="1641,3010"></execute>
+  <properties Id="{BF2F04CD-3D1F-444e-8960-D08EBD285C3F}" Description="This prerequisite installs the Microsoft Visual C++ Runtime Libraries (x86) for VS 2012 Update 4" AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2012 update 4 redistributable package (x86).prq"></properties>
+  <behavior Reboot="2"></behavior>
+</SetupPrereq>

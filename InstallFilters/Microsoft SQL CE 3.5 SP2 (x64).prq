@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SetupPrereq>
+  <conditions>
+    <condition Type="32" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server Compact Edition\v3.5\ENU" FileName="DesktopRuntimeVersion_x64" ReturnValue="3.5.8080.0"></condition>
+  </conditions>
+  <operatingsystemconditions>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="0" PlatformId="2" CSDVersion="" ServicePackMajorMin="3"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="3" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="10" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+  </operatingsystemconditions>
+  <files>
+    <file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\SQL CE 3.5\SSCERuntime_x64-ENU.msi" URL="http://saturn.installshield.com/devstudio/setuprequirements/sqlce35sp2/SSCERuntime_x64-ENU.msi" CheckSum="558F4EC3B1D25761399A81D3F14BDB6D" FileSize="0,3653120"></file>
+  </files>
+  <execute file="SSCERuntime_x64-ENU.msi" cmdline="/q /norestart" cmdlinesilent="/q /norestart" returncodetoreboot="1641,3010,4123" requiresmsiengine="1"></execute>
+  <properties Id="{98C2B127-189A-4154-8F39-C7E64851A458}" Description="This prerequisite installs the Microsoft SQL Server Compact 3.5 SP2 64-bit." AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft sql ce 3.5 sp2 (x64).prq"></properties>
+  <behavior Reboot="2"></behavior>
+</SetupPrereq>

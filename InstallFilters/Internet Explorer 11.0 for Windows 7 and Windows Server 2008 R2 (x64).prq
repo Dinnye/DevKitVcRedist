@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="16" Comparison="2" Path="[SystemFolder]" FileName="mshtml.dll" ReturnValue="11.0.9600"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="4" ServicePackMajorMin="1"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Internet Explorer 11.0\IE11-Windows6.1-x64-en-us.exe" URL="http://download.microsoft.com/download/7/1/7/7179A150-F2D2-4502-9D70-4B59EA148EAA/IE11-Windows6.1-x64-en-us.exe" CheckSum="839A1A4D5043D694CD324C33937E00AE" FileSize="0,55915216"></file>
+	</files>
+	<execute file="IE11-Windows6.1-x64-en-us.exe" cmdline="/quiet" cmdlinesilent="/quiet" returncodetoreboot="3010"></execute>
+	<properties Id="{78FB411D-6D84-44BC-B3E8-830900227D26}" Description="This installs Internet Explorer 11.0 for x64-based systems running Windows 7 SP1 or Server 2008 R2 SP1." AltPrqURL="http://saturn.installshield.com/is/prerequisites/Internet Explorer 11.0 for Windows 7 and Windows Server 2008 R2 (x64).prq"></properties>
+	<behavior Reboot="2"></behavior>
+</SetupPrereq>

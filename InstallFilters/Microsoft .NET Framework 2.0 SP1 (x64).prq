@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="32" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v2.0.50727" FileName="SP" ReturnValue="1"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .net\2.0SP1\x64\NetFx20SP1_x64.exe" URL="http://download.microsoft.com/download/9/8/6/98610406-c2b7-45a4-bdc3-9db1b1c5f7e2/NetFx20SP1_x64.exe" CheckSum="4C07706A2AC5806944BC6A09C103BF9F" FileSize="0,49196040"></file>
+	</files>
+	<execute file="NetFx20SP1_x64.exe" cmdline="/q /norestart" cmdlinesilent="/q /norestart" returncodetoreboot="3010,8192,1641" requiresmsiengine="1"></execute>
+	<properties Id="{7EC507A1-1055-4475-BE66-85856B22C904}" Description="This prerequisite installs the .net 2.0 SP1 framework for x64 systems." AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft .net framework 2.0 sp1 (x64).prq"></properties>
+	<behavior Reboot="2"></behavior>
+</SetupPrereq>

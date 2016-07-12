@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="2" Comparison="32" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\1041" FileName="Install" ReturnValue="1"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1" ProductType="1" ServicePackMajorMin="3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="1" ProductType="2|3" ServicePackMajorMin="2"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="1" ServicePackMajorMin="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="1" ProductType="2|3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="1" ProductType="1" ServicePackMajorMin="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="8" ProductType="2|3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="8" ProductType="2|3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="8" ProductType="1"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .net\4.0\LangPack\Japanese\dotNetFx40LP_Full_x86_ia64ja.exe" URL="http://download.microsoft.com/download/B/5/7/B5727C45-A897-478F-B18B-D288D066479E/dotNetFx40LP_Full_x86_ia64ja.exe" CheckSum="50D0144DA18E5AB939302A915BC6782A" FileSize="0,4243376"></file>
+	</files>
+	<execute file="dotNetFx40LP_Full_x86_ia64ja.exe" cmdline="/q /norestart" cmdlinesilent="/q /norestart" returncodetoreboot="1641,3010,1614" requiresmsiengine="1"></execute>
+	<dependencies>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Windows Imaging Component (x86).prq"></dependency>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Windows Imaging Component (x64).prq"></dependency>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .NET Framework 4.0 Full.prq"></dependency>
+	</dependencies>
+	<properties Id="{04137f01-4145-4187-83f7-220cc03036e3}" Description="This prerequisite installs the .NET 4.0 framework full Japanese language pack for 32-bit (x86) and Itanium(ia64) systems." AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft .net framework 4.0 full (x86 ia64) language pack - japanese.prq"></properties>
+	<behavior Reboot="2"></behavior>
+</SetupPrereq>

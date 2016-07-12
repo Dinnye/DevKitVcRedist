@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="32" Comparison="32" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\VC\Servicing\14.0\RuntimeMinimum" FileName="UpdateVersion" ReturnValue="14.0.23026"/>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4" ServicePackMajorMin="2"/>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="4" ServicePackMajorMin="1"/>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4"/>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="3" PlatformId="2" CSDVersion="" Bits="4"/>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3" ServicePackMajorMin="2"/>
+		<operatingsystemcondition MajorVersion="10" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4"/>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="1" ServicePackMajorMin="3"/>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\VC 2015 Redist\vc_redist.x64.exe" URL="http://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x64.exe" CheckSum="27B141AACC2777A82BB3FA9F6E5E5C1C" FileSize="0,14572000"/>
+	</files>
+	<execute file="vc_redist.x64.exe" cmdline="/q" cmdlinesilent="/q" returncodetoreboot="1641,3010"/>
+	<properties Id="{915387C3-E260-4985-861D-E7A891A4F73B}" Description="This prerequisite installs the Microsoft Visual C++ 2015 Runtime Libraries (x64)." AltPrqURL="http://saturn.installshield.com/is/prerequisites/Microsoft Visual C++ 2015 Redistributable Package (x64).prq"/>
+	<behavior Reboot="2"/>
+</SetupPrereq>

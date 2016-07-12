@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="2" Comparison="32" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v2.0.50727\1042" FileName="Install" ReturnValue="1"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .net\2.0\x64\LangPack\Korean\langpack.exe" URL="http://www.microsoft.com/downloads/info.aspx?na=90&amp;p=&amp;SrcDisplayLang=ko&amp;SrcCategoryId=&amp;SrcFamilyId=92E0E1CE-8693-4480-84FA-7D85EEF59016&amp;u=http%3a%2f%2fdownload.microsoft.com%2fdownload%2fc%2f9%2f0%2fc9000730-6be8-4fd1-ac0a-403b30bce651%2flangpack.exe" CheckSum="BFA6C1BB55A4E4CBCCC9DEDDFD3A69E1" FileSize="0,3003072"></file>
+	</files>
+	<execute file="langpack.exe" cmdline="/q:a /c:&quot;install /l /q&quot;" cmdlinesilent="/q:a /c:&quot;install /l /q&quot;" returncodetoreboot="3010, 8192" requiresmsiengine="1"></execute>
+	<dependencies>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .NET Framework 2.0 (x64).prq"></dependency>
+	</dependencies>
+	<properties Id="{0A7176EC-BBB1-44c8-BDFF-0411A951CA25}" Description="This prerequisite installs the Korean .net 2.0 language pack for x64 systems." AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft .net framework 2.0 (x64) language pack - korean.prq"></properties>
+</SetupPrereq>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="2" Comparison="32" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v2.0.50727" FileName="Install" ReturnValue="1"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="8" ProductType="2|3"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .net\2.0\IA64\NetFx64.exe" URL="http://www.microsoft.com/downloads/info.aspx?na=90&amp;p=&amp;SrcDisplayLang=en&amp;SrcCategoryId=&amp;SrcFamilyId=53c2548b-bec7-4ab4-8cbe-33e07cfc83a7&amp;u=http%3a%2f%2fdownload.microsoft.com%2fdownload%2ff%2f8%2f6%2ff86148a4-e8f7-4d08-a484-b4107f238728%2fNetFx64.exe" CheckSum="11252E59E94760BBA8C4D3B8DEFC0B3C" FileSize="0,54738624"></file>
+	</files>
+	<execute file="NetFx64.exe" cmdline="/q:a /c:&quot;install /l /q&quot;" cmdlinesilent="/q:a /c:&quot;install /l /q&quot;" returncodetoreboot="3010, 8192" requiresmsiengine="1"></execute>
+	<properties Id="{145565E1-871F-4cc8-B472-E5FC0D74E393}" Description="This prerequisite installs the .net 2.0 framework for Itanium systems." AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft .net framework 2.0 (ia64).prq"></properties>
+</SetupPrereq>

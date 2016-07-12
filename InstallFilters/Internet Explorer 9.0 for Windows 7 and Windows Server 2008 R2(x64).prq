@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="16" Comparison="2" Path="[SystemFolder]" FileName="mshtml.dll" ReturnValue="9.0.8112.16421"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="4" ProductType="1"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile=".\Internet Explorer 9.0\x64\Windows7_Server2008R2\IE9-Windows7-x64-enu.exe" URL="http://download.microsoft.com/download/C/1/6/C167B427-722E-4665-9A40-A37BC5222B0A/IE9-Windows7-x64-enu.exe" CheckSum="7C20C6512AEDB1F358B6D4EDD82AC3E9" FileSize="0,36380976"></file>
+	</files>
+	<execute file="IE9-Windows7-x64-enu.exe" cmdline="/quiet" cmdlinesilent="/quiet" returncodetoreboot="3010"></execute>
+	<properties Id="{E1B86A4E-7690-49ED-87D2-6DDB02EA2F79}" Description="This installs Internet Explorer 9.0 for x64-based systems running Windows 7 or Server 2008 R2." AltPrqURL="http://saturn.installshield.com/is/prerequisites/internet explorer 9.0 for windows 7 and windows server 2008 r2(x64).prq"></properties>
+	<behavior Reboot="2"></behavior>
+</SetupPrereq>

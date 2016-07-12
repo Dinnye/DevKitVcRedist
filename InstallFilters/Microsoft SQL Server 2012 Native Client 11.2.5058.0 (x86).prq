@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="16" Comparison="2" Path="[SystemFolder]" FileName="sqlncli11.dll" ReturnValue="2011.110.5058.0"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="1" ProductType="1" ServicePackMajorMin="2"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1" ProductType="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="1" ProductType="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="1" ProductType="2|3" ServicePackMajorMin="2"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="3" PlatformId="2" CSDVersion="" Bits="1" ProductType="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="10" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="1" ProductType="1"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\SQLFeaturePack\2012Sp2\x86\sqlncli.msi" URL="http://download.microsoft.com/download/3/A/6/3A632674-A016-4E31-A675-94BE390EA739/ENU/x86/sqlncli.msi" CheckSum="23C9496A4B6BA7BB81FB9D3198ED4F6C" FileSize="0,3129344"></file>
+	</files>
+	<execute file="sqlncli.msi" cmdlinesilent="/qn IACCEPTSQLNCLILICENSETERMS=YES" requiresmsiengine="1"></execute>
+	<properties Id="{125AB5F8-0156-4A9F-B1D1-C2B7E7D82A60}" Description="This installs Microsoft SQL Server 2012 Native Client 11.2.5058.0 (x86) package." AltPrqURL="http://saturn.installshield.com/devstudio/setuprequirements/sqlexpress/Microsoft SQL Server 2012 Native Client 11.2.5058.0 (x86).prq"></properties>
+</SetupPrereq>

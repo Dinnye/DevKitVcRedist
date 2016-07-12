@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SetupPrereq>
+  <conditions>
+    <condition Type="16" Comparison="2" Path="[ProgramFiles64Folder]Microsoft SQL Server\100\KeyFile\1033" FileName="sqlsysclrtypes_keyfile.dll" ReturnValue="2007.100.2531.0"></condition>
+  </conditions>
+  <operatingsystemconditions>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="1" ServicePackMajorMin="3"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3" ServicePackMajorMin="2"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4" ProductType="1" ServicePackMajorMin="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="3" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="10" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+  </operatingsystemconditions>
+  <files>
+    <file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\SQLFeaturePack\10.00.2531\x64\SQLSysClrTypes.msi" URL="http://download.microsoft.com/download/A/D/0/AD021EF1-9CBC-4D11-AB51-6A65019D4706/SQLSysClrTypes.msi" CheckSum="5402CCA38604B6EB33856FD030F33008" FileSize="0,1917952"></file>
+  </files>
+  <execute file="SQLSysClrTypes.msi" cmdlinesilent="/qn" requiresmsiengine="1"></execute>
+  <properties Id="Microsoft SQL Server System CLR Types 10.00.2531 (x64)" Description="The SQL Server System CLR Types package contains the components implementing the new geometry, geography, and hierarchyid types in SQL Server 2008. This component can be installed separately from the server to allow client applications to use these types outside of the server.&#xA;" AltPrqURL="http://saturn.installshield.com/devstudio/setuprequirements/sqlfeaturepack/10.00.2531/Microsoft SQL Server System CLR Types 10.00.2531 (x64).prq"></properties>
+</SetupPrereq>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SetupPrereq>
+  <conditions>
+    <condition Type="2" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full" FileName="Release" ReturnValue="379893"></condition>
+  </conditions>
+  <operatingsystemconditions>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" ProductType="2|3" ServicePackMajorMin="2"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" ServicePackMajorMin="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="2" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" ProductType="1" ServicePackMajorMin="2"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="3" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="10" MinorVersion="0" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+  </operatingsystemconditions>
+  <files>
+    <file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .net\4.5\Full\NDP452-KB2901907-x86-x64-AllOS-ENU.exe" URL="http://download.microsoft.com/download/E/2/1/E21644B5-2DF2-47C2-91BD-63C560427900/NDP452-KB2901907-x86-x64-AllOS-ENU.exe" CheckSum="EE01FC4110C73A8E5EFC7CABDA0F5FF7" FileSize="0,69999448"></file>
+  </files>
+  <execute file="NDP452-KB2901907-x86-x64-AllOS-ENU.exe" cmdline="/showrmui /passive " cmdlinesilent="/q /norestart" returncodetoreboot="1641,3010" requiresmsiengine="1"></execute>
+  <properties Id="{C4366B56-BE8F-41DA-AEFC-CB5165ADB5D3}" Description="This prerequisite installs the .NET Framework 4.5.2 full standalone package." AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft .net framework 4.5.2 full.prq"></properties>
+  <behavior Reboot="2"></behavior>
+</SetupPrereq>

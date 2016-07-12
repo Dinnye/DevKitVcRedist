@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="16" Comparison="2" Path="[System64Folder]" FileName="sqlncli11.dll" ReturnValue="2011.110.5058.0"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4" ProductType="1" ServicePackMajorMin="2"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3" ServicePackMajorMin="2"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="4" ProductType="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="3" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="10" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\SQLFeaturePack\2012Sp2\x64\sqlncli.msi" URL="http://download.microsoft.com/download/3/A/6/3A632674-A016-4E31-A675-94BE390EA739/ENU/x64/sqlncli.msi" CheckSum="EAB80AD4931BF16A3B98C0D86DCC9D4F" FileSize="0,5083136"></file>
+	</files>
+	<execute file="sqlncli.msi" cmdlinesilent="/qn IACCEPTSQLNCLILICENSETERMS=YES" requiresmsiengine="1"></execute>
+	<properties Id="{63A88B12-4E66-43FC-8869-2360D32FB05D}" Description="This installs Microsoft SQL Server 2012 Native Client 11.2.5058.0 (x64) package." AltPrqURL="http://saturn.installshield.com/devstudio/setuprequirements/sqlexpress/Microsoft SQL Server 2012 Native Client 11.2.5058.0 (x64).prq"></properties>
+</SetupPrereq>

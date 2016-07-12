@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="1" ProductType="2|3"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="1"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<conditions>
+		<condition Type="16" Comparison="2" Path="[SystemFolder]" FileName="mshtml.dll" ReturnValue="8.0.6001.18702"></condition>
+	</conditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Internet Explorer 8.0\x86\Vista_Server2008\IE8-WindowsVista-x86-ENU.exe" URL="http://download.microsoft.com/download/F/8/8/F88F09A2-A315-44C0-848E-48476A9E1577/IE8-WindowsVista-x86-ENU.exe" CheckSum="FAE1F096B5E97209F3C5C3BADB5DB7CF" FileSize="0,13944160"></file>
+	</files>
+	<execute file="IE8-WindowsVista-x86-ENU.exe"></execute>
+	<properties Id="{CAF57E13-44B3-4CFE-AF03-78B73E7ED366}" Description="This installs Internet Explorer 8.0 for x86-based systems running Windows Vista, Windows Vista SP1, or Server 2008." AltPrqURL="http://saturn.installshield.com/is/prerequisites/internet explorer 8.0 for windows vista and server 2008 (x86).prq"></properties>
+	<behavior Reboot="2"></behavior>
+</SetupPrereq>

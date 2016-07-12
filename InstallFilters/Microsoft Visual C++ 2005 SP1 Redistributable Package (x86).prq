@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SetupPrereq>
+  <conditions>
+    <condition Type="1" Comparison="2" Path="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\B25099274A207264182F8181ADD555D0" FileName="" ReturnValue="" Bits="2"></condition>
+  </conditions>
+  <operatingsystemconditions>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="0" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="2" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="2" ProductType="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1" ProductType="1"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" ProductType="2|3"></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="6" MinorVersion="3" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+    <operatingsystemcondition MajorVersion="10" MinorVersion="0" PlatformId="2" CSDVersion=""></operatingsystemcondition>
+  </operatingsystemconditions>
+  <files>
+    <file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\VC 2005 SP1 Redist\vcredist_x86.exe" URL="http://download.microsoft.com/download/e/1/c/e1c773de-73ba-494a-a5ba-f24906ecf088/vcredist_x86.exe" CheckSum="5C82BE7AD1775B67916EE19C15B99331" FileSize="0,2723264"></file>
+  </files>
+  <execute file="vcredist_x86.exe" cmdline="/q:a /c:&quot;VCREDI~3.EXE /q:a /c:&quot;&quot;msiexec /i vcredist.msi /qn /l*v %tmp%\vcredist_x86.log&quot;&quot;  &quot;" cmdlinesilent="/q:a /c:&quot;VCREDI~3.EXE /q:a /c:&quot;&quot;msiexec /i vcredist.msi /qn /l*v %tmp%\vcredist_x86.log&quot;&quot; &quot;" returncodetoreboot="3010,8192,1641,1046"></execute>
+  <properties Id="{8034C99E-3BC0-4E53-BC6E-02E3D8CF5378}" Description="This prerequisite installs the Microsoft Visual C++ 2005 SP1 Redistributable Package for x86-based systems." AltPrqURL="http://saturn.installshield.com/is/prerequisites/microsoft visual c++ 2005 sp1 redistributable package (x86).prq"></properties>
+  <behavior Reboot="2"></behavior>
+</SetupPrereq>

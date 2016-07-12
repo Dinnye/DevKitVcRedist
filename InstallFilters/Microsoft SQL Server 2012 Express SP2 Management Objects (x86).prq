@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="16" Comparison="2" Path="[ProgramFiles64Folder]Microsoft SQL Server\110\KeyFile\1033" FileName="sharedmanagementobjects_keyfile.dll" ReturnValue="2011.110.5058.0" Bits="2"></condition>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="1" ServicePackMajorMin="2"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="1" ProductType="1" ServicePackMajorMin="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="1" ProductType="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="3" PlatformId="2" CSDVersion="" Bits="1"></operatingsystemcondition>
+		<operatingsystemcondition MajorVersion="10" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="1"></operatingsystemcondition>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\SQLFeaturePack\2012Sp2\x86\SharedManagementObjects.msi" URL="http://download.microsoft.com/download/3/A/6/3A632674-A016-4E31-A675-94BE390EA739/ENU/x86/SharedManagementObjects.msi" CheckSum="ADFBD348838647264B258738963675A8" FileSize="0,6750208"></file>
+	</files>
+	<execute file="SharedManagementObjects.msi" cmdlinesilent="/q /HIDECONSOLE" returncodetoreboot="1046,3010" requiresmsiengine="1"></execute>
+	<properties Id="{2AA220C6-16BE-4FAD-A003-75D33605256F}" AltPrqURL="http://saturn.installshield.com/devstudio/setuprequirements/sqlfeaturepack/sqlexpress2012SP2/Microsoft SQL Server 2012 Express SP2 Management Objects (x86).prq"></properties>
+</SetupPrereq>
