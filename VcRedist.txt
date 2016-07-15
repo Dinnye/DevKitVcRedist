@@ -95,6 +95,7 @@ Microsoft Visual C++ 2012 (x86) {E7D4E834-93EB-351F-B8FB-82CDAE623003}
 Microsoft Visual C++ 2012 (x64) {2EDC2FA3-1F34-34E5-9085-588C9EFD1CC6}
 
 Visual C++ 2012 Update 4		11.0.61030			2013/11/20
+61030
 Microsoft Visual C++ 2012 (x86) {33D1FD90-4274-48A1-9BC1-97E33D9C2D6F}	http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x86.exe
 Microsoft Visual C++ 2012 (x64) {CA67548A-5EBE-413A-B50C-4B9CEB6D66C6} 	http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe
 
@@ -112,6 +113,7 @@ x64 {ca67548a-5ebe-413a-b50c-4b9ceb6d66c6}
 Visual C++ 2013			(VC++ 12.0)
 // ---------------------------------------------------------------------------------------------------
 Visual C++ 2013 runtime files		12.0.30501.0		2014/12/30
+21005
 Microsoft Visual C++ 2013 (x86) {f65db027-aff3-4070-886a-0d87064aabb1}	https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x86.exe
 Microsoft Visual C++ 2013 (x64) {050d4fc8-5d48-4b8f-8972-47c82c46020f}	https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x64.exe
 
@@ -129,6 +131,7 @@ Microsoft Visual C++ 2015 (x86) {2e085fd2-a3e4-4b39-8e10-6b8d35f55244}	https://d
 Microsoft Visual C++ 2015 (x64) {dab68466-3a7d-41a8-a5cf-415e3ff8ef71}	https://download.microsoft.com/download/0/5/0/0504B211-6090-48B1-8DEE-3FF879C29968/vc_redist.x64.exe
 
 Visual C++ 2015 Update 3			14.0.24210		2016/06/22
+24210
 https://www.microsoft.com/en-us/download/details.aspx?id=52982
 Microsoft Visual C++ 2015 (x86) {23658c02-145e-483d-ba6b-1eb82c580529}	https://download.microsoft.com/download/4/2/F/42FF78CE-8DE0-4C88-AD7A-5F8DFFB49F74/vc_redist.x86.exe
 Microsoft Visual C++ 2015 (x64) {f144e08f-9cbe-4f09-9a8c-f2b858b7ee7f}	https://download.microsoft.com/download/4/2/F/42FF78CE-8DE0-4C88-AD7A-5F8DFFB49F74/vc_redist.x64.exe
