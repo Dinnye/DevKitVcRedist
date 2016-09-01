@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="16" Comparison="2" Path="[System64Folder]" FileName="msvcp140.dll" ReturnValue="14.0.24212"/>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4" ServicePackMajorMin="2"/>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="4" ServicePackMajorMin="1"/>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4"/>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="3" PlatformId="2" CSDVersion="" Bits="4"/>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="2|3" ServicePackMajorMin="2"/>
+		<operatingsystemcondition MajorVersion="10" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4"/>
+		<operatingsystemcondition MajorVersion="5" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4" ProductType="1" ServicePackMajorMin="3"/>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile=".\VC 2015 Redist\Update3\vc_redist.x64.exe" URL="https://download.microsoft.com/download/2/a/2/2a2ef9ab-1b4b-49f0-9131-d33f79544e70/vc_redist.x64.exe" CheckSum="2397CB0A7D4F611B521A23E8E3B22424" FileSize="0,15302984"/>
+	</files>
+	<execute file="vc_redist.x64.exe" cmdline="/q /norestart" cmdlinesilent="/q /norestart" returncodetoreboot="1641,3010"/>
+	<properties Id="{D093EE4D-527D-4CC7-AB3C-DCE3219FA508}" Description="This prerequisite installs the Microsoft Visual C++ 2015 Update 3 Runtime Libraries (x64)." AltPrqURL="http://saturn.installshield.com/is/prerequisites/Microsoft Visual C++ 2015 Update 3 Redistributable Package (x64).prq"/>
+	<behavior Reboot="2"/>
+</SetupPrereq>

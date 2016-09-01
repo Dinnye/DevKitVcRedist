@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SetupPrereq>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="3" PlatformId="2" CSDVersion="" Bits="1"/>
+	</operatingsystemconditions>
+	<conditions>
+		<condition Type="32" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\3\PowerShellEngine" FileName="PowerShellVersion" ReturnValue="5.0"/>
+	</conditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Windows Management Framework 5\Win8.1-KB3134758-x86.msu" URL="https://download.microsoft.com/download/2/C/6/2C6E1B4A-EBE5-48A6-B225-2D2058A9CEFB/Win8.1-KB3134758-x86.msu" CheckSum="2990082E7AF06B41A3438D470F100288" FileSize="0,15059790"/>
+	</files>
+	<execute file="Win8.1-KB3134758-x86.msu" cmdline="/quiet /norestart" cmdlinesilent="/quiet /norestart" returncodetoreboot="3010" requiresmsiengine="1"/>
+	<dependencies>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .NET Framework 4.5 Full.prq"/>
+	</dependencies>
+	<properties Id="{310F75BD-2395-4072-8112-84C1A48F6A43}" Description="This prerequisite installs the Windows Management Framework 5.0 for 32-bit Windows 8.1 machines." AltPrqURL="http://saturn.installshield.com/is/prerequisites/Windows Management Framework 5.0 for Windows 8.1 (x86).prq"/>
+	<behavior Reboot="2"/>
+</SetupPrereq>

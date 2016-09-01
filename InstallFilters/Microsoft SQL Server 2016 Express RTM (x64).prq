@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="32" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\SQLEXPRESS\MSSQLServer\CurrentVersion" FileName="CurrentVersion" ReturnValue="13.0.1601.5" Bits="2"/>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4"/>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="3" PlatformId="2" CSDVersion="" Bits="4"/>
+		<operatingsystemcondition MajorVersion="10" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4"/>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile=".\SQLServerExpress\2016\x64\SQLEXPR_x64_ENU.exe" URL="https://download.microsoft.com/download/E/1/2/E12B3655-D817-49BA-B934-CEB9DAC0BAF3/SQLEXPR_x64_ENU.exe" CheckSum="902347C4F97B2CB00007C74AE1A6912E" FileSize="0,315579864"/>
+	</files>
+	<execute file="SQLEXPR_x64_ENU.exe" cmdline="/qs /ACTION=Install /FEATURES=SQLEngine /INSTANCENAME=SQLEXPRESS /IAcceptSQLServerLicenseTerms /SkipInstallerRunCheck" cmdlinesilent="/q /HIDECONSOLE /ACTION=Install /FEATURES=SQLEngine /INSTANCENAME=SQLEXPRESS  /IAcceptSQLServerLicenseTerms /SkipInstallerRunCheck" requiresmsiengine="1"/>
+	<properties Id="{C00B2D46-778B-48C4-85A4-2FB52524ECBE}" Description="This installs a native 64-bit Microsoft SQL Server 2016 Express Edition (SQL Server Express) onto only 64-bit operating systems. The /q switch suppresses all Setup dialog boxes and error messages. See https://msdn.microsoft.com/en-us/library/ms144259(v=sql.130).aspx for more information." AltPrqURL="http://saturn.installshield.com/devstudio/setuprequirements/sqlexpress2016/Microsoft SQL Server 2016 Express RTM (x64).prq"/>
+</SetupPrereq>

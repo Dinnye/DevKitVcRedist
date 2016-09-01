@@ -130,8 +130,9 @@ https://www.microsoft.com/en-us/download/details.aspx?id=51682
 Microsoft Visual C++ 2015 (x86) {2e085fd2-a3e4-4b39-8e10-6b8d35f55244}	https://download.microsoft.com/download/0/5/0/0504B211-6090-48B1-8DEE-3FF879C29968/vc_redist.x86.exe
 Microsoft Visual C++ 2015 (x64) {dab68466-3a7d-41a8-a5cf-415e3ff8ef71}	https://download.microsoft.com/download/0/5/0/0504B211-6090-48B1-8DEE-3FF879C29968/vc_redist.x64.exe
 
-Visual C++ 2015 Update 3			14.0.24210		2016/06/22
+Visual C++ 2015 Update 3			14.0.24212		2016/06/22
 24210
 https://www.microsoft.com/en-us/download/details.aspx?id=52982
-Microsoft Visual C++ 2015 (x86) {23658c02-145e-483d-ba6b-1eb82c580529}	https://download.microsoft.com/download/4/2/F/42FF78CE-8DE0-4C88-AD7A-5F8DFFB49F74/vc_redist.x86.exe
-Microsoft Visual C++ 2015 (x64) {f144e08f-9cbe-4f09-9a8c-f2b858b7ee7f}	https://download.microsoft.com/download/4/2/F/42FF78CE-8DE0-4C88-AD7A-5F8DFFB49F74/vc_redist.x64.exe
+Microsoft Visual C++ 2015 (x86) {23658c02-145e-483d-ba6b-1eb82c580529}	https://download.microsoft.com/download/9/a/2/9a2a7e36-a8af-46c0-8a78-a5eb111eefe2/vc_redist.x86.exe
+Microsoft Visual C++ 2015 (x64) {f144e08f-9cbe-4f09-9a8c-f2b858b7ee7f}	https://download.microsoft.com/download/2/a/2/2a2ef9ab-1b4b-49f0-9131-d33f79544e70/vc_redist.x64.exe
+

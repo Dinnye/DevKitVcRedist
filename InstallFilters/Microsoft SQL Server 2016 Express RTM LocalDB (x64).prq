@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SetupPrereq>
+	<conditions>
+		<condition Type="32" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\MSSQL13E.LOCALDB\MSSQLServer\CurrentVersion" FileName="CurrentVersion" ReturnValue="13.0.1601.5" Bits="2"/>
+	</conditions>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="4"/>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="3" PlatformId="2" CSDVersion="" Bits="4"/>
+		<operatingsystemcondition MajorVersion="10" MinorVersion="0" PlatformId="2" CSDVersion="" Bits="4"/>
+	</operatingsystemconditions>
+	<files>
+		<file LocalFile=".\SQLServerExpress\2016\x64\SqlLocalDB.MSI" URL="https://download.microsoft.com/download/E/1/2/E12B3655-D817-49BA-B934-CEB9DAC0BAF3/SqlLocalDB.msi" CheckSum="E02C3613841D58189A404280A407287C" FileSize="0,46149632"/>
+	</files>
+	<execute file="SqlLocalDB.MSI" cmdlinesilent="/qn" requiresmsiengine="1"/>
+	<properties Id="{BF677DBD-8B55-4E21-8653-5ED38C51CD15}" Description="This installs a native 64-bit Microsoft SQL Server 2016 Express RTM LocalDB Edition (SQL Server Express LocalDB) onto only 64-bit operating systems." AltPrqURL="http://saturn.installshield.com/devstudio/setuprequirements/sqlexpress2016/Microsoft SQL Server 2016 Express RTM LocalDB (x64).prq"/>
+</SetupPrereq>

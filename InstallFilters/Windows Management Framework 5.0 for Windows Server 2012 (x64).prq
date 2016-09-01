@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SetupPrereq>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="2" PlatformId="2" CSDVersion="" Bits="2" ProductType="2|3"/>
+	</operatingsystemconditions>
+	<conditions>
+		<condition Type="32" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\3\PowerShellEngine" FileName="PowerShellVersion" ReturnValue="5.0" Bits="2"/>
+	</conditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Windows Management Framework 5\W2K12-KB3134759-x64.msu" URL="https://download.microsoft.com/download/2/C/6/2C6E1B4A-EBE5-48A6-B225-2D2058A9CEFB/W2K12-KB3134759-x64.msu" CheckSum="5EB7D8A18782DE05B23DFA91A9FB5B3F" FileSize="0,21540661"/>
+	</files>
+	<execute file="W2K12-KB3134759-x64.msu" cmdline="/quiet /norestart" cmdlinesilent="/quiet /norestart" returncodetoreboot="3010" requiresmsiengine="1"/>
+	<dependencies>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .NET Framework 4.5 Full.prq"/>
+	</dependencies>
+	<properties Id="{A85DB73C-277F-4831-B397-0811A3A742F1}" Description="This prerequisite installs the Windows Management Framework 5.0 for 64-bit Windows Server 2012 machines." AltPrqURL="http://saturn.installshield.com/is/prerequisites/Windows Management Framework 5.0 for Windows Server 2012 (x64).prq"/>
+	<behavior Reboot="2"/>
+</SetupPrereq>

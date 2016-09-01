@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SetupPrereq>
+	<operatingsystemconditions>
+		<operatingsystemcondition MajorVersion="6" MinorVersion="1" PlatformId="2" CSDVersion="" Bits="4"/>
+	</operatingsystemconditions>
+	<conditions>
+		<condition Type="32" Comparison="2" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\3\PowerShellEngine" FileName="PowerShellVersion" ReturnValue="5.0" Bits="2"/>
+	</conditions>
+	<files>
+		<file LocalFile="&lt;ISProductFolder&gt;\SetupPrerequisites\Windows Management Framework 5\Win7AndW2K8R2-KB3134760-x64.msu" URL="https://download.microsoft.com/download/2/C/6/2C6E1B4A-EBE5-48A6-B225-2D2058A9CEFB/Win7AndW2K8R2-KB3134760-x64.msu" CheckSum="E290BB51DD66E63331BB6BA0A1A0C8C9" FileSize="0,21779572"/>
+	</files>
+	<execute file="Win7AndW2K8R2-KB3134760-x64.msu" cmdline="/quiet /norestart" cmdlinesilent="/quiet /norestart" returncodetoreboot="3010" requiresmsiengine="1"/>
+	<dependencies>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Microsoft .NET Framework 4.5 Full.prq"/>
+		<dependency File="&lt;ISProductFolder&gt;\SetupPrerequisites\Windows Management Framework 4.0 for Windows 7 SP1 and Server 2008 R2 SP1 (x64).prq"/>
+	</dependencies>
+	<properties Id="{8D6CE93B-65EB-40DD-9B6E-8348F6AC33C5}" Description="This prerequisite installs the Windows Management Framework 5.0 for 32-bit Windows 7 SP1 and Server 2008 R2 SP1 machines." AltPrqURL="http://saturn.installshield.com/is/prerequisites/Windows Management Framework 5.0 for Windows 7 SP1 and Server 2008 R2 SP1 (x64).prq"/>
+	<behavior Reboot="2"/>
+</SetupPrereq>
