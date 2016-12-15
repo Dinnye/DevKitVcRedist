@@ -31,14 +31,17 @@
 !ifdef VCREDIST2012
 	Var X86_2012
 	Var X64_2012
+	!define SIMPLE_CHECK
 !endif
 !ifdef VCREDIST2013
 	Var X86_2013
 	Var X64_2013
+	!define SIMPLE_CHECK
 !endif
 !ifdef VCREDIST2015
 	Var X86_2015
 	Var X64_2015
+	!define SIMPLE_CHECK
 !endif
 
 ; --------------------------------
@@ -51,8 +54,8 @@
 	Var	VCREDIST_FILE
 	Var	VCREDIST_FOUND
 	Var	VCREDIST_REBOOT
+!ifdef SIMPLE_CHECK
 	Var	VCREDIST_CODE
-!ifdef VCREDIST2012
 	Var	VCREDIST_VERSION
 !endif
 
@@ -421,7 +424,7 @@ Function "CheckRedistVC10"
 FunctionEnd
 */
 
-;!ifdef VCREDIST2012
+!ifdef SIMPLE_CHECK
 Function "CheckRedist"
 	StrCpy $VCREDIST_FOUND	"0"
 	StrCpy $R9 $VCREDIST_NAME
@@ -454,7 +457,7 @@ Function "CheckRedist"
 	
 	Call RedistDownloadAndInstall
 FunctionEnd
-;!endif
+!endif
 
 
 ; ======================================================
