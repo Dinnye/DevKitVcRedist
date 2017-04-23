@@ -31,17 +31,23 @@
 !ifdef VCREDIST2012
 	Var X86_2012
 	Var X64_2012
-	!define SIMPLE_CHECK
+	!ifndef SIMPLE_CHECK
+		!define SIMPLE_CHECK
+	!endif
 !endif
 !ifdef VCREDIST2013
 	Var X86_2013
 	Var X64_2013
-	!define SIMPLE_CHECK
+	!ifndef SIMPLE_CHECK
+		!define SIMPLE_CHECK
+	!endif
 !endif
 !ifdef VCREDIST2015
 	Var X86_2015
 	Var X64_2015
-	!define SIMPLE_CHECK
+	!ifndef SIMPLE_CHECK
+		!define SIMPLE_CHECK
+	!endif
 !endif
 
 ; --------------------------------
