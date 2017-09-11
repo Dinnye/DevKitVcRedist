@@ -259,7 +259,7 @@ FunctionEnd
 !ifdef VCREDIST2012
 Function "2012vcredistX86"
 	StrCpy $VCREDIST_NAME	"Visual C++ 2012 Update 4 (x86)"
-	StrCpy $VCREDIST_GUID	"{F0C3E5D1-1ADE-321E-8167-68EF0DE699A5}"
+	StrCpy $VCREDIST_GUID	"{33D1FD90-4274-48A1-9BC1-97E33D9C2D6F}"
 	StrCpy $VCREDIST_PATH	"vcRedist_2012\x86_update_4\vcredist_x86.exe"
 	StrCpy $VCREDIST_URL	"http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x86.exe"
 	StrCpy $VCREDIST_FILE	"vcredist_2012_x86.exe"
@@ -277,7 +277,7 @@ FunctionEnd
 
 Function "2012vcredistX64"
 	StrCpy $VCREDIST_NAME	"Visual C++ 2012 Update 4 (x64)"
-	StrCpy $VCREDIST_GUID	"{F0C3E5D1-1ADE-321E-8167-68EF0DE699A5}"
+	StrCpy $VCREDIST_GUID	"{CA67548A-5EBE-413A-B50C-4B9CEB6D66C6}"
 	StrCpy $VCREDIST_PATH	"vcRedist_2012\x64_update_4\vcredist_x64.exe"
 	StrCpy $VCREDIST_URL	"http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe"
 	StrCpy $VCREDIST_FILE	"vcredist_2012_x64.exe"
