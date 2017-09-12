@@ -341,36 +341,36 @@ FunctionEnd
 !ifdef VCREDIST2015
 Function "2015vcredistX86"
 	StrCpy $VCREDIST_NAME	"Visual C++ 2015 Update 3 (x86)"
-	StrCpy $VCREDIST_GUID	"{23658c02-145e-483d-ba6b-1eb82c580529}"
+	StrCpy $VCREDIST_GUID	"{e2803110-78b3-4664-a479-3611a381656a}"
 	StrCpy $VCREDIST_PATH	"vcRedist_2015\x86_update_3\vc_redist.x86.exe"
-	StrCpy $VCREDIST_URL	"https://download.microsoft.com/download/9/a/2/9a2a7e36-a8af-46c0-8a78-a5eb111eefe2/vc_redist.x86.exe"
+	StrCpy $VCREDIST_URL	"https://download.microsoft.com/download/6/A/A/6AA4EDFF-645B-48C5-81CC-ED5963AEAD48/vc_redist.x86.exe"
 	StrCpy $VCREDIST_FILE	"vcredist_2015_x86.exe"
 	StrCpy $VCREDIST_REBOOT	";1641;3010;"
 	StrCpy $VCREDIST_IS64	"0"
 	StrCpy $VCREDIST_CODE	"14.0"
 !ifdef VCREDIST_OFFLINEMODE
-	File /oname=$TEMP\$VCREDIST_FILE "${VCREDIST_ROOT}vcRedist_2015\x86_update_3\vc_redist.x86.exe"
+	File /oname=$TEMP\$VCREDIST_FILE "${VCREDIST_ROOT}vcRedist_2015\x86_update_3_24215\vc_redist.x86.exe"
 !endif
 	IntOp $VCREDIST_VERSION $VCREDIST_VERSION ^ $VCREDIST_VERSION
-	IntOp $VCREDIST_VERSION $VCREDIST_VERSION + 24212
+	IntOp $VCREDIST_VERSION $VCREDIST_VERSION + 24215
 	
 	Call CheckRedist
 FunctionEnd
 
 Function "2015vcredistX64"
 	StrCpy $VCREDIST_NAME	"Visual C++ 2015 Update 3 (x64)"
-	StrCpy $VCREDIST_GUID	"{f144e08f-9cbe-4f09-9a8c-f2b858b7ee7f}"
+	StrCpy $VCREDIST_GUID	"{d992c12e-cab2-426f-bde3-fb8c53950b0d}"
 	StrCpy $VCREDIST_PATH	"vcRedist_2015\x64_update_3\vc_redist.x64.exe"
-	StrCpy $VCREDIST_URL	"https://download.microsoft.com/download/2/a/2/2a2ef9ab-1b4b-49f0-9131-d33f79544e70/vc_redist.x64.exe"
+	StrCpy $VCREDIST_URL	"https://download.microsoft.com/download/6/A/A/6AA4EDFF-645B-48C5-81CC-ED5963AEAD48/vc_redist.x64.exe"
 	StrCpy $VCREDIST_FILE	"vcredist_2015_x64.exe"
 	StrCpy $VCREDIST_REBOOT	";1641;3010;"
 	StrCpy $VCREDIST_IS64	"1"
 	StrCpy $VCREDIST_CODE	"14.0"
 !ifdef VCREDIST_OFFLINEMODE
-	File /oname=$TEMP\$VCREDIST_FILE "${VCREDIST_ROOT}vcRedist_2015\x64_update_3\vc_redist.x64.exe"
+	File /oname=$TEMP\$VCREDIST_FILE "${VCREDIST_ROOT}vcRedist_2015\x64_update_3_24215\vc_redist.x64.exe"
 !endif
 	IntOp $VCREDIST_VERSION $VCREDIST_VERSION ^ $VCREDIST_VERSION
-	IntOp $VCREDIST_VERSION $VCREDIST_VERSION + 24212
+	IntOp $VCREDIST_VERSION $VCREDIST_VERSION + 24215
 	
 	Call CheckRedist
 FunctionEnd

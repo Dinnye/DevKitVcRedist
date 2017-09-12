@@ -2,6 +2,7 @@ http://blogs.msdn.com/b/astebner/archive/2009/01/29/9384143.aspx
 http://support.microsoft.com/kb/2019667
 http://msdn.microsoft.com/en-us/library/vstudio/bb164659%28v=vs.110%29.aspx
 http://stackoverflow.com/questions/12206314/detect-if-visual-c-redistributable-for-visual-studio-2012-is-installed
+https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads
 
 
 // ---------------------------------------------------------------------------------------------------
@@ -12,10 +13,11 @@ https://support.microsoft.com/en-us/kb/2977003
 // ---------------------------------------------------------------------------------------------------
 Visual C++ 2005			(VC++ 8.0)
 // ---------------------------------------------------------------------------------------------------
+https://blogs.msdn.microsoft.com/astebner/2007/01/24/updated-vc-8-0-runtime-redistributable-packages-are-included-in-visual-studio-2005-sp1/
 
 Visual C++ 2005 runtime files												2006/04/10
-Visual C++ 2005 (x86) - {A49F249F-0C91-497F-86DF-B2585E8E76B7}
-Visual C++ 2005 (x64) - {6E8E85E8-CE4B-4FF5-91F7-04999C9FAE6A}
+Visual C++ 2005 (x86) - {A49F249F-0C91-497F-86DF-B2585E8E76B7}				https://download.microsoft.com/download/d/3/4/d342efa6-3266-4157-a2ec-5174867be706/vcredist_x86.exe
+Visual C++ 2005 (x64) - {6E8E85E8-CE4B-4FF5-91F7-04999C9FAE6A}				https://download.microsoft.com/download/9/1/4/914851c6-9141-443b-bdb4-8bad3a57bea9/vcredist_x64.exe
 Visual C++ 2005 (ia64)- {03ED71EA-F531-4927-AABD-1C31BCE8E187}
 
 Visual C++ 2005 SP1 runtime files											2007/08/28		8.0.50727.762
@@ -37,11 +39,12 @@ Visual C++ 2005 SP1 MFC (a64) - {C2F60BDA-462A-4A72-8E4D-CA431A56E9EA}		http://d
 // ---------------------------------------------------------------------------------------------------
 Visual C++ 2008			(VC++ 9.0)
 // ---------------------------------------------------------------------------------------------------
+https://blogs.msdn.microsoft.com/astebner/2009/01/29/mailbag-how-to-detect-the-presence-of-the-visual-c-9-0-runtime-redistributable-package/
 
 Visual C++ 2008 runtime files														2007/11/29		9.0.21022
-Microsoft Visual C++ 2008 (x86)  - {FF66E9F6-83E7-3A3E-AF14-8DE9A809A6A4}
-Microsoft Visual C++ 2008 (x64)  - {350AA351-21FA-3270-8B7A-835434E766AD}
-Microsoft Visual C++ 2008 (IA64) - {2B547B43-DB50-3139-9EBE-37D419E0F5FA}
+Microsoft Visual C++ 2008 (x86)  - {FF66E9F6-83E7-3A3E-AF14-8DE9A809A6A4}			https://download.microsoft.com/download/1/1/1/1116b75a-9ec3-481a-a3c8-1777b5381140/vcredist_x86.exe
+Microsoft Visual C++ 2008 (x64)  - {350AA351-21FA-3270-8B7A-835434E766AD}			https://download.microsoft.com/download/d/2/4/d242c3fb-da5a-4542-ad66-f9661d0a8d19/vcredist_x64.exe
+Microsoft Visual C++ 2008 (IA64) - {2B547B43-DB50-3139-9EBE-37D419E0F5FA}			https://download.microsoft.com/download/a/1/a/a1a4996b-ed78-4c2b-9589-8edd81b8df39/vcredist_IA64.exe
 
 Visual C++ 2008 SP1 runtime files													2008/09/16		9.0.30729.17
 Microsoft Visual C++ 2008 SP1 (x86)  - {9A25302D-30C0-39D9-BD6F-21E6EC160475}
@@ -62,11 +65,12 @@ Microsoft Visual C++ 2008 SP1 MFC (IA64) - {515643D1-4E9E-342F-A75A-D1F16448DC04
 // ---------------------------------------------------------------------------------------------------
 Visual C++ 2010			(VC++ 10.0)
 // ---------------------------------------------------------------------------------------------------
+https://blogs.msdn.microsoft.com/astebner/2010/05/05/mailbag-how-to-detect-the-presence-of-the-visual-c-2010-redistributable-package/
 
 Visual C++ 2010 runtime files													2010/04/12
-Microsoft Visual C++ 2010 (x86) {196BB40D-1578-3D01-B289-BEFC77A11A1E}
-Microsoft Visual C++ 2010 (x64) {DA5E371C-6333-3D8A-93A4-6FD5B20BCC6E}
-Microsoft Visual C++ 2010 (IA64) {C1A35166-4301-38E9-BA67-02823AD72A1B}
+Microsoft Visual C++ 2010 (x86) {196BB40D-1578-3D01-B289-BEFC77A11A1E}				https://download.microsoft.com/download/5/B/C/5BC5DBB3-652D-4DCE-B14A-475AB85EEF6E/vcredist_x86.exe
+Microsoft Visual C++ 2010 (x64) {DA5E371C-6333-3D8A-93A4-6FD5B20BCC6E}				https://download.microsoft.com/download/3/2/2/3224B87F-CFA0-4E70-BDA3-3DE650EFEBA5/vcredist_x64.exe
+Microsoft Visual C++ 2010 (IA64) {C1A35166-4301-38E9-BA67-02823AD72A1B}				https://download.microsoft.com/download/3/3/A/33A75193-2CBC-424E-A886-287551FF1EB5/vcredist_IA64.exe
 
 Visual C++ 2010 SP1 runtime files												2011/03/03		10.0.40219
 Microsoft Visual C++ 2010 SP1 (x86)  - {F0C3E5D1-1ADE-321E-8167-68EF0DE699A5}		http://download.microsoft.com/download/C/6/D/C6D0FD4E-9E53-4897-9B91-836EBA2AACD3/vcredist_x86.exe
@@ -74,6 +78,7 @@ Microsoft Visual C++ 2010 SP1 (x64)  - {1D8E6291-B0D5-35EC-8441-6616F567A0F7}		h
 Microsoft Visual C++ 2010 SP1 (IA64) - {88C73C1C-2DE5-3B01-AFB8-B46EF4AB41CD}		http://download.microsoft.com/download/7/7/3/77332C03-CC6C-45E5-A7B6-E02504B93847/vcredist_IA64.exe
 
 Visual C++ 2010 SP1 MFC Security Update											2011/08/09
+https://www.microsoft.com/en-us/download/details.aspx?id=26999
 Microsoft Visual C++ 2010 SP1 MFC (x86)  - {}	http://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe
 Microsoft Visual C++ 2010 SP1 MFC (x64)  - {}	http://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x64.exe
 Microsoft Visual C++ 2010 SP1 MFC (IA64) - {} 	http://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_ia64.exe
@@ -99,6 +104,7 @@ Visual C++ 2012 Update 4		11.0.61030			2013/11/20
 Microsoft Visual C++ 2012 (x86) {33D1FD90-4274-48A1-9BC1-97E33D9C2D6F}	http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x86.exe
 Microsoft Visual C++ 2012 (x64) {CA67548A-5EBE-413A-B50C-4B9CEB6D66C6} 	http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe
 
+
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\VC\Servicing\11.0\RuntimeMinimum Version
 
 {BD95A8CD-1D9F-35AD-981A-3E7925026EBB}
@@ -113,9 +119,12 @@ x64 {ca67548a-5ebe-413a-b50c-4b9ceb6d66c6}
 Visual C++ 2013			(VC++ 12.0)
 // ---------------------------------------------------------------------------------------------------
 Visual C++ 2013 runtime files		12.0.30501.0		2014/12/30
+https://www.microsoft.com/en-us/download/details.aspx?id=40784
 21005
 Microsoft Visual C++ 2013 (x86) {f65db027-aff3-4070-886a-0d87064aabb1}	https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x86.exe
 Microsoft Visual C++ 2013 (x64) {050d4fc8-5d48-4b8f-8972-47c82c46020f}	https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x64.exe
+
+https://support.microsoft.com/en-us/help/3138367/update-for-visual-c-2013-and-visual-c-redistributable-package
 
 // ---------------------------------------------------------------------------------------------------
 Visual C++ 2015			(VC++ 14.0)
@@ -136,3 +145,16 @@ https://www.microsoft.com/en-us/download/details.aspx?id=52982
 Microsoft Visual C++ 2015 (x86) {23658c02-145e-483d-ba6b-1eb82c580529}	https://download.microsoft.com/download/9/a/2/9a2a7e36-a8af-46c0-8a78-a5eb111eefe2/vc_redist.x86.exe
 Microsoft Visual C++ 2015 (x64) {f144e08f-9cbe-4f09-9a8c-f2b858b7ee7f}	https://download.microsoft.com/download/2/a/2/2a2ef9ab-1b4b-49f0-9131-d33f79544e70/vc_redist.x64.exe
 
+Visual C++ 2015 Update 3			14.0.24215		2016/08/18
+https://www.microsoft.com/en-us/download/details.aspx?id=53587
+24215
+Microsoft Visual C++ 2015 (x86)	{e2803110-78b3-4664-a479-3611a381656a}	https://download.microsoft.com/download/6/A/A/6AA4EDFF-645B-48C5-81CC-ED5963AEAD48/vc_redist.x86.exe
+Microsoft Visual C++ 2015 (x64)	{d992c12e-cab2-426f-bde3-fb8c53950b0d}	https://download.microsoft.com/download/6/A/A/6AA4EDFF-645B-48C5-81CC-ED5963AEAD48/vc_redist.x64.exe
+
+
+// ---------------------------------------------------------------------------------------------------
+Visual C++ 2017			(VC++ 15.0)
+// ---------------------------------------------------------------------------------------------------
+Visual C++ 2017			14.11.25325.0
+Microsoft Visual C++ 2015 (x86)	{404c9c27-8377-4fd1-b607-7ca635db4e49}	https://download.visualstudio.microsoft.com/download/pr/11100229/78c1e864d806e36f6035d80a0e80399e/VC_redist.x86.exe
+Microsoft Visual C++ 2015 (x64)	{6c6356fe-cbfa-4944-9bed-a9e99f45cb7a}	https://download.visualstudio.microsoft.com/download/pr/11100230/15ccb3f02745c7b206ad10373cbca89b/VC_redist.x64.exe
