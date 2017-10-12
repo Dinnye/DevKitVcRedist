@@ -1,4 +1,4 @@
-; --------------------------------
+﻿; --------------------------------
 ; Localization
 
 	LangString LocS_VC_SystemReq			${LANG_GERMAN}		"Das Installationssystem intalliert Komponenten"

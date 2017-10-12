@@ -1,4 +1,4 @@
-; --------------------------------
+﻿; --------------------------------
 ; Localization
 	LangString LocS_VC_SystemReq			${LANG_ENGLISH}		"Installing System Component"
 	LangString LocS_VC_SystemReturnError	${LANG_ENGLISH}		"ErrorCode:"
