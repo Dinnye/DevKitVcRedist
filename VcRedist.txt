@@ -4,6 +4,9 @@ http://msdn.microsoft.com/en-us/library/vstudio/bb164659%28v=vs.110%29.aspx
 http://stackoverflow.com/questions/12206314/detect-if-visual-c-redistributable-for-visual-studio-2012-is-installed
 https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads
 
+Good
+https://blogs.technet.microsoft.com/jagbal/2017/09/04/where-can-i-download-the-old-visual-c-redistributables/
+
 
 // ---------------------------------------------------------------------------------------------------
 Visual C++
