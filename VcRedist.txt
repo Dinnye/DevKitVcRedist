@@ -3,6 +3,7 @@ http://support.microsoft.com/kb/2019667
 http://msdn.microsoft.com/en-us/library/vstudio/bb164659%28v=vs.110%29.aspx
 http://stackoverflow.com/questions/12206314/detect-if-visual-c-redistributable-for-visual-studio-2012-is-installed
 https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads
+https://www.itechtics.com/microsoft-visual-c-redistributable-versions-direct-download-links
 
 Good
 https://blogs.technet.microsoft.com/jagbal/2017/09/04/where-can-i-download-the-old-visual-c-redistributables/
@@ -161,3 +162,9 @@ Visual C++ 2017			(VC++ 15.0)
 Visual C++ 2017			14.11.25325.0
 Microsoft Visual C++ 2015 (x86)	{404c9c27-8377-4fd1-b607-7ca635db4e49}	https://download.visualstudio.microsoft.com/download/pr/11100229/78c1e864d806e36f6035d80a0e80399e/VC_redist.x86.exe
 Microsoft Visual C++ 2015 (x64)	{6c6356fe-cbfa-4944-9bed-a9e99f45cb7a}	https://download.visualstudio.microsoft.com/download/pr/11100230/15ccb3f02745c7b206ad10373cbca89b/VC_redist.x64.exe
+
+Visual C++ 2017			14.16.27012.6
+Microsoft Visual C++ 2017 (x86)	{67f67547-9693-4937-aa13-56e296bd40f6}
+https://download.visualstudio.microsoft.com/download/pr/d0b808a8-aa78-4250-8e54-49b8c23f7328/9c5e6532055786367ee61aafb3313c95/vc_redist.x86.exe
+Microsoft Visual C++ 2017 (x64)	{427ada59-85e7-4bc8-b8d5-ebf59db60423}
+https://download.visualstudio.microsoft.com/download/pr/9fbed7c7-7012-4cc0-a0a3-a541f51981b5/e7eec15278b4473e26d7e32cef53a34c/vc_redist.x64.exe

@@ -49,6 +49,13 @@
 		!define SIMPLE_CHECK
 	!endif
 !endif
+!ifdef VCREDIST2017
+	Var X86_2017
+	Var X64_2017
+	!ifndef SIMPLE_CHECK
+		!define SIMPLE_CHECK
+	!endif
+!endif
 
 ; --------------------------------
 ;  Internal Variables
@@ -93,6 +100,10 @@ Function "ResetVCRedistCounter"
 !ifdef VCREDIST2015
 	IntOp $X86_2015 $X86_2015 ^ $X86_2015
 	IntOp $X64_2015 $X64_2015 ^ $X64_2015
+!endif
+!ifdef VCREDIST2017
+	IntOp $X86_2017 $X86_2017 ^ $X86_2017
+	IntOp $X64_2017 $X64_2017 ^ $X64_2017
 !endif
 FunctionEnd
 
@@ -146,6 +157,14 @@ Function "InstallVCRedist"
 	${EndIf}
 	${If} $X64_2015 > 0
 		Call 2015vcredistX64
+	${EndIf}
+!endif
+!ifdef VCREDIST2017
+	${If} $X86_2017 > 0
+		Call 2017vcredistX86
+	${EndIf}
+	${If} $X64_2017 > 0
+		Call 2017vcredistX64
 	${EndIf}
 !endif
 FunctionEnd
@@ -342,7 +361,7 @@ FunctionEnd
 Function "2015vcredistX86"
 	StrCpy $VCREDIST_NAME	"Visual C++ 2015 Update 3 (x86)"
 	StrCpy $VCREDIST_GUID	"{e2803110-78b3-4664-a479-3611a381656a}"
-	StrCpy $VCREDIST_PATH	"vcRedist_2015\x86_update_3\vc_redist.x86.exe"
+	StrCpy $VCREDIST_PATH	"vcRedist_2015\x86_update_3_24215\vc_redist.x86.exe"
 	StrCpy $VCREDIST_URL	"https://download.microsoft.com/download/6/A/A/6AA4EDFF-645B-48C5-81CC-ED5963AEAD48/vc_redist.x86.exe"
 	StrCpy $VCREDIST_FILE	"vcredist_2015_x86.exe"
 	StrCpy $VCREDIST_REBOOT	";1641;3010;"
@@ -360,7 +379,7 @@ FunctionEnd
 Function "2015vcredistX64"
 	StrCpy $VCREDIST_NAME	"Visual C++ 2015 Update 3 (x64)"
 	StrCpy $VCREDIST_GUID	"{d992c12e-cab2-426f-bde3-fb8c53950b0d}"
-	StrCpy $VCREDIST_PATH	"vcRedist_2015\x64_update_3\vc_redist.x64.exe"
+	StrCpy $VCREDIST_PATH	"vcRedist_2015\x64_update_3_24215\vc_redist.x64.exe"
 	StrCpy $VCREDIST_URL	"https://download.microsoft.com/download/6/A/A/6AA4EDFF-645B-48C5-81CC-ED5963AEAD48/vc_redist.x64.exe"
 	StrCpy $VCREDIST_FILE	"vcredist_2015_x64.exe"
 	StrCpy $VCREDIST_REBOOT	";1641;3010;"
@@ -368,6 +387,48 @@ Function "2015vcredistX64"
 	StrCpy $VCREDIST_CODE	"14.0"
 !ifdef VCREDIST_OFFLINEMODE
 	File /oname=$TEMP\$VCREDIST_FILE "${VCREDIST_ROOT}vcRedist_2015\x64_update_3_24215\vc_redist.x64.exe"
+!endif
+	IntOp $VCREDIST_VERSION $VCREDIST_VERSION ^ $VCREDIST_VERSION
+	IntOp $VCREDIST_VERSION $VCREDIST_VERSION + 24215
+	
+	Call CheckRedist
+FunctionEnd
+!endif
+
+
+; ======================================================
+;  VCREDIST 2017
+; ======================================================
+!ifdef VCREDIST2017
+Function "2017vcredistX86"
+	StrCpy $VCREDIST_NAME	"Visual C++ 2017 (x86)"
+	StrCpy $VCREDIST_GUID	"{67f67547-9693-4937-aa13-56e296bd40f6}"
+	StrCpy $VCREDIST_PATH	"vcRedist_2017\x86_14.16.27012.6\vc_redist.x86.exe"
+	StrCpy $VCREDIST_URL	"https://download.visualstudio.microsoft.com/download/pr/d0b808a8-aa78-4250-8e54-49b8c23f7328/9c5e6532055786367ee61aafb3313c95/vc_redist.x86.exe"
+	StrCpy $VCREDIST_FILE	"vcredist_2017_x86.exe"
+	StrCpy $VCREDIST_REBOOT	";1641;3010;"
+	StrCpy $VCREDIST_IS64	"0"
+	StrCpy $VCREDIST_CODE	"14.0"
+!ifdef VCREDIST_OFFLINEMODE
+	File /oname=$TEMP\$VCREDIST_FILE "${VCREDIST_ROOT}vcRedist_2017\x86_14.16.27012.6\vc_redist.x86.exe"
+!endif
+	IntOp $VCREDIST_VERSION $VCREDIST_VERSION ^ $VCREDIST_VERSION
+	IntOp $VCREDIST_VERSION $VCREDIST_VERSION + 24215
+	
+	Call CheckRedist
+FunctionEnd
+
+Function "2017vcredistX64"
+	StrCpy $VCREDIST_NAME	"Visual C++ 2017 (x64)"
+	StrCpy $VCREDIST_GUID	"{427ada59-85e7-4bc8-b8d5-ebf59db60423}"
+	StrCpy $VCREDIST_PATH	"vcRedist_2017\x64_14.16.27012.6\vc_redist.x64.exe"
+	StrCpy $VCREDIST_URL	"https://download.visualstudio.microsoft.com/download/pr/9fbed7c7-7012-4cc0-a0a3-a541f51981b5/e7eec15278b4473e26d7e32cef53a34c/vc_redist.x64.exe"
+	StrCpy $VCREDIST_FILE	"vcredist_2017_x64.exe"
+	StrCpy $VCREDIST_REBOOT	";1641;3010;"
+	StrCpy $VCREDIST_IS64	"1"
+	StrCpy $VCREDIST_CODE	"14.0"
+!ifdef VCREDIST_OFFLINEMODE
+	File /oname=$TEMP\$VCREDIST_FILE "${VCREDIST_ROOT}vcRedist_2017\x64_14.16.27012.6\vc_redist.x64.exe"
 !endif
 	IntOp $VCREDIST_VERSION $VCREDIST_VERSION ^ $VCREDIST_VERSION
 	IntOp $VCREDIST_VERSION $VCREDIST_VERSION + 24215
