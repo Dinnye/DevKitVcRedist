@@ -3,7 +3,7 @@
 ; --------------------------------
 !ifndef	VCREDIST_CONFIG
 	!include VcRedist_config.nsh
-	!include VcRedist_langstrings.nsh
+	!include VcRedist_lang.nsh
 !endif
 !include "x64.nsh"		; Macros for x64 machines
 
