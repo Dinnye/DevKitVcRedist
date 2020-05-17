@@ -56,6 +56,13 @@
 		!define SIMPLE_CHECK
 	!endif
 !endif
+!ifdef VCREDIST2019
+	Var X86_2019
+	Var X64_2019
+	!ifndef SIMPLE_CHECK
+		!define SIMPLE_CHECK
+	!endif
+!endif
 
 ; --------------------------------
 ;  Internal Variables
@@ -104,6 +111,10 @@ Function "ResetVCRedistCounter"
 !ifdef VCREDIST2017
 	IntOp $X86_2017 $X86_2017 ^ $X86_2017
 	IntOp $X64_2017 $X64_2017 ^ $X64_2017
+!endif
+!ifdef VCREDIST2019
+	IntOp $X86_2019 $X86_2019 ^ $X86_2019
+	IntOp $X64_2019 $X64_2019 ^ $X64_2019
 !endif
 FunctionEnd
 
@@ -165,6 +176,14 @@ Function "InstallVCRedist"
 	${EndIf}
 	${If} $X64_2017 > 0
 		Call 2017vcredistX64
+	${EndIf}
+!endif
+!ifdef VCREDIST2019
+	${If} $X86_2019 > 0
+		Call 2019vcredistX86
+	${EndIf}
+	${If} $X64_2019 > 0
+		Call 2019vcredistX64
 	${EndIf}
 !endif
 FunctionEnd
@@ -437,6 +456,48 @@ Function "2017vcredistX64"
 FunctionEnd
 !endif
 
+
+; ======================================================
+;  VCREDIST 2019
+; ======================================================
+!ifdef VCREDIST2019
+;;TODO
+Function "2019vcredistX86"
+	StrCpy $VCREDIST_NAME	"Visual C++ 2019 (x86)"
+	StrCpy $VCREDIST_GUID	"{67f67547-9693-4937-aa13-56e296bd40f6}"
+	StrCpy $VCREDIST_PATH	"vcRedist_2017\x86_14.16.27012.6\vc_redist.x86.exe"
+	StrCpy $VCREDIST_URL	"https://download.visualstudio.microsoft.com/download/pr/d0b808a8-aa78-4250-8e54-49b8c23f7328/9c5e6532055786367ee61aafb3313c95/vc_redist.x86.exe"
+	StrCpy $VCREDIST_FILE	"vcredist_2017_x86.exe"
+	StrCpy $VCREDIST_REBOOT	";1641;3010;"
+	StrCpy $VCREDIST_IS64	"0"
+	StrCpy $VCREDIST_CODE	"14.0"
+!ifdef VCREDIST_OFFLINEMODE
+	File /oname=$TEMP\$VCREDIST_FILE "${VCREDIST_ROOT}vcRedist_2017\x86_14.16.27012.6\vc_redist.x86.exe"
+!endif
+	IntOp $VCREDIST_VERSION $VCREDIST_VERSION ^ $VCREDIST_VERSION
+	IntOp $VCREDIST_VERSION $VCREDIST_VERSION + 24215
+	
+	Call CheckRedist
+FunctionEnd
+
+Function "2019vcredistX64"
+	StrCpy $VCREDIST_NAME	"Visual C++ 2019 (x64)"
+	StrCpy $VCREDIST_GUID	"{427ada59-85e7-4bc8-b8d5-ebf59db60423}"
+	StrCpy $VCREDIST_PATH	"vcRedist_2017\x64_14.16.27012.6\vc_redist.x64.exe"
+	StrCpy $VCREDIST_URL	"https://download.visualstudio.microsoft.com/download/pr/9fbed7c7-7012-4cc0-a0a3-a541f51981b5/e7eec15278b4473e26d7e32cef53a34c/vc_redist.x64.exe"
+	StrCpy $VCREDIST_FILE	"vcredist_2017_x64.exe"
+	StrCpy $VCREDIST_REBOOT	";1641;3010;"
+	StrCpy $VCREDIST_IS64	"1"
+	StrCpy $VCREDIST_CODE	"14.0"
+!ifdef VCREDIST_OFFLINEMODE
+	File /oname=$TEMP\$VCREDIST_FILE "${VCREDIST_ROOT}vcRedist_2017\x64_14.16.27012.6\vc_redist.x64.exe"
+!endif
+	IntOp $VCREDIST_VERSION $VCREDIST_VERSION ^ $VCREDIST_VERSION
+	IntOp $VCREDIST_VERSION $VCREDIST_VERSION + 24215
+	
+	Call CheckRedist
+FunctionEnd
+!endif
 
 ; ======================================================
 ;  Check Redist Exist
