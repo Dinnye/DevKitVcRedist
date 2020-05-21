@@ -502,6 +502,7 @@ FunctionEnd
 ; ======================================================
 ;  Check Redist Exist
 ; ======================================================
+!ifdef VCREDIST2005 | VCREDIST2008 | VCREDIST2010
 Function "CheckRedistWithWinSxs"
 	StrCpy $VCREDIST_FOUND	"0"
 	StrCpy $R9 $VCREDIST_NAME
@@ -520,6 +521,7 @@ Function "CheckRedistWithWinSxs"
 	
 	Call RedistDownloadAndInstall
 FunctionEnd
+!endif
 
 /*
 Function "CheckRedistVC10"
