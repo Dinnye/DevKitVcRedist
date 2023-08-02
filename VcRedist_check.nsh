@@ -602,9 +602,15 @@ Function "RedistDownloadAndInstall"
 		
 !ifndef VCREDIST_OFFLINEMODE
 		ClearErrors
+!ifdef VCREDIST_USE_INETC
+		inetc::get /POPUP "" /CAPTION "$VCREDIST_NAME" "$VCREDIST_URL" "$TEMP\$VCREDIST_FILE"
+		Pop $R0 ;Get the return value
+		StrCmp $R0 "OK" +4
+!else
 		NSISdl::download /TIMEOUT=30000 "$VCREDIST_URL" "$TEMP\$VCREDIST_FILE"
 		Pop $R0 ;Get the return value
 		StrCmp $R0 "success" +4
+!endif
 			MessageBox MB_ICONSTOP "$(LocS_VC_Download_Failed): $R0"
 			Abort
 			Quit
