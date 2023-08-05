@@ -603,6 +603,13 @@ Function "RedistDownloadAndInstall"
 !ifndef VCREDIST_OFFLINEMODE
 		ClearErrors
 !ifdef VCREDIST_USE_INETC
+		
+		${Do}
+			Pop $0
+			IfErrors send
+		${Loop}
+		send:
+
 		inetc::get /POPUP "" /CAPTION "$VCREDIST_NAME" "$VCREDIST_URL" "$TEMP\$VCREDIST_FILE"
 		Pop $R0 ;Get the return value
 		StrCmp $R0 "OK" +4
